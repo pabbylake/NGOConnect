@@ -25,6 +25,8 @@
 @synthesize urlTextView = _urlTextView;
 @synthesize phoneNumberButton = _phoneNumberButton;
 @synthesize emailButton = _emailButton;
+@synthesize coordinate =_coordinate;
+@synthesize mPlacemark =_mPlacemark;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -63,5 +65,8 @@
 }
 
 - (IBAction)viewMap:(id)sender {
+    
+    MKPlacemark *mPlacemark = [[[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil] autorelease];
+    [mapView addAnnotation:mPlacemark];
 }
 @end
