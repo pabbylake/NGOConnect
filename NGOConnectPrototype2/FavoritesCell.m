@@ -1,17 +1,14 @@
 //
-//  SearchResultsCell.m
+//  FavoritesCell.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 12/2/13.
+//  Created by Max Mendelson on 12/16/13.
 //  Copyright (c) 2013 Max Mendelson. All rights reserved.
 //
 
-#import "SearchResultsCell.h"
+#import "FavoritesCell.h"
 
-@implementation SearchResultsCell
-
-@synthesize nameLabel = _nameLabel;
-@synthesize addressLabel = _addressLabel;
+@implementation FavoritesCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -18,15 +18,12 @@
 @synthesize nameLabel = _nameLabel;
 @synthesize typeLabel = _typeLabel;
 @synthesize addressLabel = _addressLabel;
-@synthesize mailingAddressLabel = _mailingAddressLabel;
 @synthesize countryLabel = _countryLabel;
 @synthesize regionLabel = _regionLabel;
 @synthesize goalLabel = _goalLabel;
 @synthesize urlTextView = _urlTextView;
 @synthesize phoneNumberButton = _phoneNumberButton;
 @synthesize emailButton = _emailButton;
-@synthesize coordinate =_coordinate;
-@synthesize mPlacemark =_mPlacemark;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,7 +48,6 @@
     self.addressLabel.text = self.theProfile.address;
     self.typeLabel.text = self.theProfile.type;
     [self.phoneNumberButton setTitle:self.theProfile.phoneNumber forState:UIControlStateNormal];
-    self.mailingAddressLabel.text = self.theProfile.mailingAddress;
     self.goalLabel.text = self.theProfile.goal;
     [self.emailButton setTitle:self.theProfile.email forState:UIControlStateNormal];
     self.urlTextView.text = self.theProfile.url;
@@ -65,8 +61,5 @@
 }
 
 - (IBAction)viewMap:(id)sender {
-    
-    MKPlacemark *mPlacemark = [[[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil] autorelease];
-    [mapView addAnnotation:mPlacemark];
 }
 @end

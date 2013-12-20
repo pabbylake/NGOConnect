@@ -1,25 +1,21 @@
 //
-//  SearchResultsTableViewController.m
+//  AdvancedSearchTableViewController.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 12/2/13.
+//  Created by Max Mendelson on 11/4/13.
 //  Copyright (c) 2013 Max Mendelson. All rights reserved.
 //
 
-#import "SearchResultsTableViewController.h"
-#import "SearchResultsCell.h"
-#import "ProfileViewController.h"
+#import "AdvancedSearchTableViewController.h"
+#import "AdvancedSearchTableCell.h"
 
-@interface SearchResultsTableViewController ()
+@interface AdvancedSearchTableViewController ()
 
 @end
 
-@implementation SearchResultsTableViewController
+@implementation AdvancedSearchTableViewController
 
-@synthesize names = _names;
-@synthesize addresses = _addresses;
-@synthesize profile = _profile;
-@synthesize profileObject = _profileObject;
+@synthesize categoryLabels = _categoryLabels;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,19 +29,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.categoryLabels = [[NSArray alloc]
+            initWithObjects:@"Organization's type",
+                     @"Region(s)",
+                     @"Country / Geographical area",
+                     @"Millennium Development Goals",
+                     @"Language(s)",
+                     @"Geographic scope",
+                     @"Consultative status",
+                     @"Monterrey areas",
+                     @"Forests - Major Groups", nil];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.names=@[@"African Centre for Technology Studies",
-                 @"Action Group on Erosion, Technology and Concentration ETC Group"];
-    
-    self.addresses=@[@" St. George's House ,Parliament Road, P O Box 45917,Kenya",
-                     @"180 Metcalfe Street, Suite 206, Ottawa, ON K2P 1P5,Canada"];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,30 +58,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+    return [self.categoryLabels count];
     // Return the number of rows in the section.
-    return self.names.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SearchResultsCell";
-    SearchResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"AdvancedSearchTableCell";
+    AdvancedSearchTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    int row = [indexPath row];
+    //int row = [indexPath row];
     
-    cell.nameLabel.text = _names[row];
-    cell.addressLabel.text = self.addresses[row];
-   // cell.accreditationImage.image = [UIImage imageNamed:self.image[row]];
-    
+   cell.categoryLabel.text = [self.categoryLabels
+                           objectAtIndex: [indexPath row]];
     return cell;
 }
 
@@ -124,36 +120,16 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
- if([[segue identifier] isEqualToString:(@"ProfileViewController")])
- {
-     self.profile =[segue destinationViewController];
-     [self.profile prepareForSegue:segue sender:sender];
-     
-     //Need to get the search results from a datasource object in order to
-     //create an NGOProfile object
-     
-     //Rutgers Prep is hard-coded for UI testing
-     self.profileObject = [[NGOProfile alloc]
-                           initWithName:@"Rutgers Prep School"
-                             andAddress:@"1345 Easton Ave Somerset NJ 08873"
-                           andPhoneNumber:@"7325455600"
-                           andType:@"Education"
-                           andCountry:@"USA"
-                           andRegion:@"North America"
-                           andGoal:@"Education Outreach"
-                           andEmail:@"rps@gmail.com"
-                           andUrl:@"www.rutgersprep.org"];
-     
-     self.profile.theProfile = self.profileObject;
-     
-     //NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
-     //int row = [myIndexPath row];
- }
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
+
+ */
+
 @end
