@@ -47,6 +47,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anm-vf-Y4C">
                                 <rect key="frame" x="104" y="330" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Discover"/>
                                 <connections>
@@ -1082,6 +1083,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="6I1-Ge-aPA"/>
-        <segue reference="zeN-Xn-NnM"/>
+        <segue reference="3E2-vc-5kX"/>
     </inferredMetricsTieBreakers>
 </document>
