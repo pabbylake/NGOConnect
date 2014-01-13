@@ -1,16 +1,14 @@
 //
-//  AdvancedSearchTableCell.m
+//  RecentsCell.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 11/4/13.
-//  Copyright (c) 2013 Max Mendelson. All rights reserved.
+//  Created by Max Mendelson on 1/7/14.
+//  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "AdvancedSearchTableCell.h"
+#import "RecentsCell.h"
 
-
-@implementation AdvancedSearchTableCell
-@synthesize categoryLabel = _categoryLabel;
+@implementation RecentsCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -27,6 +25,5 @@
 
     // Configure the view for the selected state
 }
-
 
 @end

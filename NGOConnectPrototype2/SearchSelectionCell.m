@@ -1,14 +1,14 @@
 //
-//  FavoritesCell.m
+//  SearchSelectionCell.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 1/7/14.
+//  Created by Max Mendelson on 1/8/14.
 //  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "FavoritesCell.h"
+#import "SearchSelectionCell.h"
 
-@implementation FavoritesCell
+@implementation SearchSelectionCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -22,7 +22,7 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-    
+
     // Configure the view for the selected state
 }
 

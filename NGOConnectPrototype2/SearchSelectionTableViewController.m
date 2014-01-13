@@ -1,21 +1,29 @@
 //
-//  AdvancedSearchTableViewController.m
+//  SearchSelectionTableViewController.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 11/4/13.
-//  Copyright (c) 2013 Max Mendelson. All rights reserved.
+//  Created by Max Mendelson on 1/8/14.
+//  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "AdvancedSearchTableViewController.h"
-#import "AdvancedSearchTableCell.h"
+#import "SearchSelectionTableViewController.h"
+#import "SearchSelectionCell.h"
 
-@interface AdvancedSearchTableViewController ()
+@interface SearchSelectionTableViewController ()
 
 @end
 
-@implementation AdvancedSearchTableViewController
+@implementation SearchSelectionTableViewController
 
-@synthesize categoryLabels = _categoryLabels;
+@synthesize oType = _oType;
+@synthesize mDG = _mDG;
+@synthesize languages = _languages;
+@synthesize fOA = _fOA;
+@synthesize geoScope = _geoScope;
+@synthesize accreditation = _accreditation;
+@synthesize cStatus = _cStatus;
+@synthesize category=_category;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,23 +37,46 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.categoryLabels = [[NSArray alloc]
-            initWithObjects:@"Organization's type",
-                     @"Region(s)",
-                     @"Country / Geographical area",
-                     @"Millennium Development Goals",
-                     @"Language(s)",
-                     @"Geographic scope",
-                     @"Consultative status",
-                     @"Monterrey areas",
-                     @"Forests - Major Groups", nil];
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if((_category = @"oType"))
+    {
+        self.selected = [NSArray arrayWithObjects:@"Academics", @"Association", @"Disability, Development and Rights Organizations", @"Cooperative", @"Foundation", @"Indigenous Peoples Organizations", @"Institution", @"Inter-Governmental Organization", @"Local Government", @"Media", @"Non-Governmental Organization", @"Open-Ended Working Group on Ageing", @"Others", @"Private Sector", @"Trade Union", nil];
+        //NSLog(self.oType);
+    }
+    else if((_category = @"mDG"))
+    {
+        self.selected = [NSArray arrayWithObjects:@"Eradicate Extreme Poverty and Hunger", @"Achieve Universal Primary Education", @"Combat HIV/AIDS, Malaria, and Other Diseases", @"Develop Globl Partnership For Development", @"Ensure Environmental Sustainability", @"Improve Maternal Health", @"Promote Gender Equality and Empower Women", @"Reduce Child Mortality", nil];
+    }
+    else if((_category = @"languages"))
+    {
+        
+    }
+
+    else if((_category = @"fOA"))
+    {
+        
+    }
+
+    else if((_category = @"geoScope"))
+    {
+        
+    }
+
+    else if((_category = @"accreditation"))
+    {
+        
+    }
+
+    else if((_category = @"cStatus"))
+    {
+        self.cStatus = [NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
+    }
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,25 +90,24 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.categoryLabels count];
     // Return the number of rows in the section.
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"AdvancedSearchTableCell";
-    AdvancedSearchTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"SearchSelectionCell";
+    SearchSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    //int row = [indexPath row];
+    NSInteger row = [indexPath row];
+    cell.optionLabel.text = self.selected[row];
     
-   cell.categoryLabel.text = [self.categoryLabels
-                           objectAtIndex: [indexPath row]];
     return cell;
 }
 
@@ -120,16 +150,9 @@
 }
 */
 
-/*
-#pragma mark - Navigation
+
 
 // In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
 
- */
 
 @end

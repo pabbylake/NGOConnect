@@ -1,5 +1,5 @@
 //
-//  FavoritesCell.h
+//  RecentsCell.h
 //  NGOConnectPrototype2
 //
 //  Created by Max Mendelson on 1/7/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavoritesCell : UITableViewCell
+@interface RecentsCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 

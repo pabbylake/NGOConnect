@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59263A187C8706004195A4 /* RecentsTableViewController.m */; };
+		1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592641187C8B4A004195A4 /* FavoritesTableViewController.m */; };
+		1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592645187C8B9D004195A4 /* FavoritesCell.m */; };
+		1B592649187D040E004195A4 /* RecentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592648187D040E004195A4 /* RecentsCell.m */; };
+		1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */; };
+		1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */; };
+		1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */; };
 		1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */; };
 		1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */; };
 		1B8BCE9C184FB0DD00C1DD2F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */; };
@@ -27,8 +34,6 @@
 		1BC7ED8D1827E84A009EC21A /* NGOConnectPrototype2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED8C1827E84A009EC21A /* NGOConnectPrototype2Tests.m */; };
 		1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED97182803F8009EC21A /* NearMeViewController.m */; };
 		1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED9A182821DA009EC21A /* SearchViewController.m */; };
-		1BC7EDA4182865FC009EC21A /* AdvancedSearchTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7EDA3182865FC009EC21A /* AdvancedSearchTableCell.m */; };
-		1BC7EDA718286654009EC21A /* AdvancedSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7EDA618286654009EC21A /* AdvancedSearchTableViewController.m */; };
 		21177F621852496B00009FC7 /* NGOProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21177F611852496B00009FC7 /* NGOProfile.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B592639187C8706004195A4 /* RecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsTableViewController.h; sourceTree = "<group>"; };
+		1B59263A187C8706004195A4 /* RecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsTableViewController.m; sourceTree = "<group>"; };
+		1B592640187C8B4A004195A4 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesTableViewController.h; path = ../FavoritesTableViewController.h; sourceTree = "<group>"; };
+		1B592641187C8B4A004195A4 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesTableViewController.m; path = ../FavoritesTableViewController.m; sourceTree = "<group>"; };
+		1B592644187C8B9D004195A4 /* FavoritesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesCell.h; sourceTree = "<group>"; };
+		1B592645187C8B9D004195A4 /* FavoritesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesCell.m; sourceTree = "<group>"; };
+		1B592647187D040E004195A4 /* RecentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsCell.h; sourceTree = "<group>"; };
+		1B592648187D040E004195A4 /* RecentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsCell.m; sourceTree = "<group>"; };
+		1B59264A187D7E86004195A4 /* SearchSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchSelectionTableViewController.h; sourceTree = "<group>"; };
+		1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionTableViewController.m; sourceTree = "<group>"; };
+		1B59264D187D7EBA004195A4 /* SearchSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchSelectionCell.h; sourceTree = "<group>"; };
+		1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionCell.m; sourceTree = "<group>"; };
+		1B592650187D8A73004195A4 /* SearchCagetoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCagetoriesViewController.h; path = ../SearchCagetoriesViewController.h; sourceTree = "<group>"; };
+		1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCagetoriesViewController.m; path = ../SearchCagetoriesViewController.m; sourceTree = "<group>"; };
 		1B8BCE8B184CE68C00C1DD2F /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
 		1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		1B8BCE8E184CEB0800C1DD2F /* SearchResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsCell.h; sourceTree = "<group>"; };
@@ -74,10 +93,6 @@
 		1BC7ED97182803F8009EC21A /* NearMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearMeViewController.m; sourceTree = "<group>"; };
 		1BC7ED99182821DA009EC21A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		1BC7ED9A182821DA009EC21A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		1BC7EDA2182865FC009EC21A /* AdvancedSearchTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvancedSearchTableCell.h; path = ../AdvancedSearchTableCell.h; sourceTree = "<group>"; };
-		1BC7EDA3182865FC009EC21A /* AdvancedSearchTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvancedSearchTableCell.m; path = ../AdvancedSearchTableCell.m; sourceTree = "<group>"; };
-		1BC7EDA518286654009EC21A /* AdvancedSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedSearchTableViewController.h; sourceTree = "<group>"; };
-		1BC7EDA618286654009EC21A /* AdvancedSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedSearchTableViewController.m; sourceTree = "<group>"; };
 		21177F601852496B00009FC7 /* NGOProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOProfile.h; sourceTree = "<group>"; };
 		21177F611852496B00009FC7 /* NGOProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOProfile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +121,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B59263C187C870D004195A4 /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				1B592639187C8706004195A4 /* RecentsTableViewController.h */,
+				1B59263A187C8706004195A4 /* RecentsTableViewController.m */,
+				1B592647187D040E004195A4 /* RecentsCell.h */,
+				1B592648187D040E004195A4 /* RecentsCell.m */,
+			);
+			name = Recents;
+			sourceTree = "<group>";
+		};
+		1B592643187C8B4E004195A4 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				1B592640187C8B4A004195A4 /* FavoritesTableViewController.h */,
+				1B592641187C8B4A004195A4 /* FavoritesTableViewController.m */,
+				1B592644187C8B9D004195A4 /* FavoritesCell.h */,
+				1B592645187C8B9D004195A4 /* FavoritesCell.m */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
 		1B8BCE91184CEB2400C1DD2F /* NameSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +155,12 @@
 		1B8BCE92184CEB3000C1DD2F /* AdvancedSearch */ = {
 			isa = PBXGroup;
 			children = (
-				1BC7EDA2182865FC009EC21A /* AdvancedSearchTableCell.h */,
-				1BC7EDA618286654009EC21A /* AdvancedSearchTableViewController.m */,
-				1BC7EDA3182865FC009EC21A /* AdvancedSearchTableCell.m */,
-				1BC7EDA518286654009EC21A /* AdvancedSearchTableViewController.h */,
+				1B592650187D8A73004195A4 /* SearchCagetoriesViewController.h */,
+				1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */,
+				1B59264D187D7EBA004195A4 /* SearchSelectionCell.h */,
+				1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */,
+				1B59264A187D7E86004195A4 /* SearchSelectionTableViewController.h */,
+				1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */,
 			);
 			name = AdvancedSearch;
 			sourceTree = "<group>";
@@ -160,9 +199,9 @@
 		1B97EE4B183CF84F00B7DCF7 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				1B8BCE94184CEB6600C1DD2F /* SearchResults */,
 				1B8BCE91184CEB2400C1DD2F /* NameSearch */,
 				1B8BCE92184CEB3000C1DD2F /* AdvancedSearch */,
+				1B8BCE94184CEB6600C1DD2F /* SearchResults */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -213,8 +252,10 @@
 				1B8BCE9D184FB11900C1DD2F /* Profile */,
 				1B97EE4A183CF83700B7DCF7 /* NearMe */,
 				1BC7ED731827E84A009EC21A /* NGOConnectPrototype2FirstViewController.h */,
-				1BC7ED741827E84A009EC21A /* NGOConnectPrototype2FirstViewController.m */,
 				1BC7ED761827E84A009EC21A /* NGOConnectPrototype2SecondViewController.h */,
+				1BC7ED741827E84A009EC21A /* NGOConnectPrototype2FirstViewController.m */,
+				1B59263C187C870D004195A4 /* Recents */,
+				1B592643187C8B4E004195A4 /* Favorites */,
 				1BC7ED771827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m */,
 				1B97EE4C183CF85C00B7DCF7 /* ViewInMap */,
 				1B97EE4B183CF84F00B7DCF7 /* Search */,
@@ -351,18 +392,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */,
 				1BC7ED6F1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.m in Sources */,
-				1BC7EDA718286654009EC21A /* AdvancedSearchTableViewController.m in Sources */,
+				1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */,
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
+				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
 				1BC7ED781827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m in Sources */,
 				21177F621852496B00009FC7 /* NGOProfile.m in Sources */,
+				1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */,
 				1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */,
 				1BC7ED751827E84A009EC21A /* NGOConnectPrototype2FirstViewController.m in Sources */,
 				1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */,
-				1BC7EDA4182865FC009EC21A /* AdvancedSearchTableCell.m in Sources */,
 				1B8BCE9C184FB0DD00C1DD2F /* ProfileViewController.m in Sources */,
+				1B592649187D040E004195A4 /* RecentsCell.m in Sources */,
+				1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */,
 				1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */,
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
+				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

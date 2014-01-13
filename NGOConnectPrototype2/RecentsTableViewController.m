@@ -1,20 +1,20 @@
 //
-//  SearchResultsTableViewController.m
+//  RecentsTableViewController.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 12/2/13.
-//  Copyright (c) 2013 Max Mendelson. All rights reserved.
+//  Created by Max Mendelson on 1/7/14.
+//  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "SearchResultsTableViewController.h"
-#import "SearchResultsCell.h"
+#import "RecentsTableViewController.h"
+#import "RecentsCell.h"
 #import "ProfileViewController.h"
 
-@interface SearchResultsTableViewController ()
+@interface RecentsTableViewController ()
 
 @end
 
-@implementation SearchResultsTableViewController
+@implementation RecentsTableViewController
 
 @synthesize names = _names;
 @synthesize addresses = _addresses;
@@ -45,7 +45,7 @@
     
     self.addresses=@[@" St. George's House ,Parliament Road, P O Box 45917,Kenya",
                      @"180 Metcalfe Street, Suite 206, Ottawa, ON K2P 1P5,Canada"];
-    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,32 +58,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
     return self.names.count;
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SearchResultsCell";
-    SearchResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"RecentsCell";
+    RecentsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     NSInteger row = [indexPath row];
     
     cell.nameLabel.text = _names[row];
     cell.addressLabel.text = self.addresses[row];
-   // cell.accreditationImage.image = [UIImage imageNamed:self.image[row]];
     
     return cell;
+    
+    
 }
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -126,34 +127,35 @@
 
 
 #pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+ 
+ // In a story board-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
  if([[segue identifier] isEqualToString:(@"ProfileViewController")])
  {
-     self.profile =[segue destinationViewController];
-     [self.profile prepareForSegue:segue sender:sender];
-     
-     //Need to get the search results from a datasource object in order to
-     //create an NGOProfile object
-     
-     //Rutgers Prep is hard-coded for UI testing
-     self.profileObject = [[NGOProfile alloc]
-                           initWithName:@"Rutgers Prep School"
-                             andAddress:@"1345 Easton Ave Somerset NJ 08873"
-                           andPhoneNumber:@"7325455600"
-                           andType:@"Education"
-                           andCountry:@"USA"
-                           andRegion:@"North America"
-                           andGoal:@"Education Outreach"
-                           andEmail:@"rps@gmail.com"
-                           andUrl:@"www.rutgersprep.org"];
-     
-     self.profile.theProfile = self.profileObject;
-     
-     //NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
-     //int row = [myIndexPath row];
+ self.profile =[segue destinationViewController];
+ [self.profile prepareForSegue:segue sender:sender];
+ 
+ //Need to get the search results from a datasource object in order to
+ //create an NGOProfile object
+ 
+ //Rutgers Prep is hard-coded for UI testing
+ self.profileObject = [[NGOProfile alloc]
+ initWithName:@"Rutgers Prep School"
+ andAddress:@"1345 Easton Ave Somerset NJ 08873"
+ andPhoneNumber:@"7325455600"
+ andType:@"Education"
+ andCountry:@"USA"
+ andRegion:@"North America"
+ andGoal:@"Education Outreach"
+ andEmail:@"rps@gmail.com"
+ andUrl:@"www.rutgersprep.org"];
+ 
+ self.profile.theProfile = self.profileObject;
+ 
+ //NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+ //int row = [myIndexPath row];
  }
-}
+ }
+
 @end
