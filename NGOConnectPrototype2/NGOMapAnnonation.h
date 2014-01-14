@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface NGOMapAnnonation : NSObject
+@interface NGOMapAnnonation : MKAnnonation
 //@property (nonatomic) CLLocationCoordinate2D *coordinate;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *address;

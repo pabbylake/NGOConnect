@@ -21,6 +21,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NGOProfile.h"
+#import "NGOMapAnnonation.h"
 
 @interface ProfileViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -32,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UITextView*urlTextView;
 @property (weak, nonatomic) IBOutlet UIButton *phoneNumberButton;
 @property (weak, nonatomic) IBOutlet UIButton *emailButton;
+@property (weak, nonatomic)NGOMapAnnonation *annotation;
 
 
 - (IBAction)viewMap:(id)sender;
