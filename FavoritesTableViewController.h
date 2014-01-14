@@ -15,5 +15,6 @@
 @property (nonatomic,strong) NSArray *addresses;
 @property (nonatomic, strong) ProfileViewController *profile;
 @property (nonatomic, strong) NGOProfile* profileObject;
+- (IBAction)editButton:(UIBarButtonItem *)sender;
 
 @end

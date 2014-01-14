@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B11174B18847BD90025EAF8 /* NGOMapAnnonation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */; };
 		1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59263A187C8706004195A4 /* RecentsTableViewController.m */; };
 		1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592641187C8B4A004195A4 /* FavoritesTableViewController.m */; };
 		1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592645187C8B9D004195A4 /* FavoritesCell.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B11174918847BD90025EAF8 /* NGOMapAnnonation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapAnnonation.h; sourceTree = "<group>"; };
+		1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapAnnonation.m; sourceTree = "<group>"; };
 		1B592639187C8706004195A4 /* RecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsTableViewController.h; sourceTree = "<group>"; };
 		1B59263A187C8706004195A4 /* RecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsTableViewController.m; sourceTree = "<group>"; };
 		1B592640187C8B4A004195A4 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesTableViewController.h; path = ../FavoritesTableViewController.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 		1B97EE4C183CF85C00B7DCF7 /* ViewInMap */ = {
 			isa = PBXGroup;
 			children = (
+				1B11174918847BD90025EAF8 /* NGOMapAnnonation.h */,
+				1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */,
 			);
 			name = ViewInMap;
 			sourceTree = "<group>";
@@ -398,6 +403,7 @@
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
 				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
 				1BC7ED781827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m in Sources */,
+				1B11174B18847BD90025EAF8 /* NGOMapAnnonation.m in Sources */,
 				21177F621852496B00009FC7 /* NGOProfile.m in Sources */,
 				1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */,
 				1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */,

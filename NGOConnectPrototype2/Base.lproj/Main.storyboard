@@ -459,7 +459,7 @@
                                 <connections>
                                     <outlet property="addressLabel" destination="QpY-rZ-kZo" id="R1q-QM-OHD"/>
                                     <outlet property="nameLabel" destination="NXb-C6-RdR" id="EK7-TE-nB8"/>
-                                    <segue destination="os6-Ac-iD6" kind="push" id="6I1-Ge-aPA"/>
+                                    <segue destination="os6-Ac-iD6" kind="push" identifier="ProfileViewController" id="6I1-Ge-aPA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -468,7 +468,13 @@
                             <outlet property="delegate" destination="QDK-lQ-KfA" id="kxv-Nv-Sfx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favorites" id="cLb-uB-Arf"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="cLb-uB-Arf">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="edit" id="h1t-5C-4Fe">
+                            <connections>
+                                <action selector="editButton:" destination="QDK-lQ-KfA" id="MHG-sA-U6x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrz-AT-HTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -508,7 +514,7 @@
                                 <connections>
                                     <outlet property="addressLabel" destination="KHk-At-w45" id="4Q1-xi-vMI"/>
                                     <outlet property="nameLabel" destination="u6Y-Zs-2tq" id="QFW-XP-vnp"/>
-                                    <segue destination="os6-Ac-iD6" kind="push" id="3r2-FR-iUi"/>
+                                    <segue destination="os6-Ac-iD6" kind="push" identifier="ProfileViewController" id="3r2-FR-iUi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -754,8 +760,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zeN-Xn-NnM"/>
+        <segue reference="6I1-Ge-aPA"/>
+        <segue reference="3E2-vc-5kX"/>
         <segue reference="DNF-ew-or3"/>
-        <segue reference="3r2-FR-iUi"/>
     </inferredMetricsTieBreakers>
 </document>
