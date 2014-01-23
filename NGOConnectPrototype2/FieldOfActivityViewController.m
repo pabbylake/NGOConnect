@@ -1,29 +1,18 @@
 //
-//  SearchSelectionTableViewController.m
+//  FieldOfActivityViewController.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 1/8/14.
+//  Created by Max Mendelson on 1/16/14.
 //  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "SearchSelectionTableViewController.h"
-#import "SearchSelectionCell.h"
+#import "FieldOfActivityViewController.h"
 
-@interface SearchSelectionTableViewController ()
+@interface FieldOfActivityViewController ()
 
 @end
 
-@implementation SearchSelectionTableViewController
-
-@synthesize oType = _oType;
-@synthesize mDG = _mDG;
-@synthesize country = _country;
-@synthesize fOA = _fOA;
-@synthesize geoScope = _geoScope;
-@synthesize accreditation = _accreditation;
-@synthesize cStatus = _cStatus;
-@synthesize category=_category;
-
+@implementation FieldOfActivityViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,46 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    if((_category = @"oType"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"Academics", @"Association", @"Disability, Development and Rights Organizations", @"Cooperative", @"Foundation", @"Indigenous Peoples Organizations", @"Institution", @"Inter-Governmental Organization", @"Local Government", @"Media", @"Non-Governmental Organization", @"Open-Ended Working Group on Ageing", @"Others", @"Private Sector", @"Trade Union", nil];
-        //NSLog(self.oType);
-    }
-    else if((_category = @"mDG"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"Eradicate Extreme Poverty and Hunger", @"Achieve Universal Primary Education", @"Combat HIV/AIDS, Malaria, and Other Diseases", @"Develop Globl Partnership For Development", @"Ensure Environmental Sustainability", @"Improve Maternal Health", @"Promote Gender Equality and Empower Women", @"Reduce Child Mortality", nil];
-    }
-    else if((_category = @"country"))
-    {
-        
-    }
-
-    else if((_category = @"fOA"))
-    {
-        
-    }
-
-    else if((_category = @"geoScope"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"International", @"Regional", @"National",@"Local", nil];
-    }
-
-    else if((_category = @"accreditation"))
-    {
-       self.selected = [NSArray arrayWithObjects:@"DPI", @"ECOSOC", @"Other", nil];
-    }
-
-    else if((_category = @"cStatus"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
-    }
-
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -90,23 +45,21 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.selected.count;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SearchSelectionCell";
-    SearchSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    NSInteger row = [indexPath row];
-    cell.optionLabel.text = self.selected[row];
     
     return cell;
 }
@@ -150,9 +103,16 @@
 }
 */
 
-
+/*
+#pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
 
+ */
 
 @end

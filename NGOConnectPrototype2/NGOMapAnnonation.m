@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "NGOMapAnnonation.h"
+//#import "NGOMapAnnonation.h"
 
-@implementation NGOMapAnnonation
+//@implementation NGOMapAnnonation
 
-@end
+//@end

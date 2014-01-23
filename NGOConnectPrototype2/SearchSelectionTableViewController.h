@@ -11,7 +11,7 @@
 @interface SearchSelectionTableViewController : UITableViewController
 @property (nonatomic, strong) NSArray *oType;
 @property (nonatomic, strong) NSArray *mDG;
-@property (nonatomic, strong) NSArray *languages;
+@property (nonatomic, strong) NSArray *country;
 @property (nonatomic, strong) NSArray *fOA;
 @property (nonatomic, strong) NSArray *geoScope;
 @property (nonatomic, strong) NSArray *accreditation;

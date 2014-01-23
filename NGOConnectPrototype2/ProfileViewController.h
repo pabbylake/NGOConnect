@@ -33,7 +33,6 @@
 @property (weak, nonatomic) IBOutlet UITextView*urlTextView;
 @property (weak, nonatomic) IBOutlet UIButton *phoneNumberButton;
 @property (weak, nonatomic) IBOutlet UIButton *emailButton;
-@property (weak, nonatomic)NGOMapAnnonation *annotation;
 
 
 - (IBAction)viewMap:(id)sender;
