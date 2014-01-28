@@ -18,6 +18,9 @@
 		1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */; };
 		1B8BCE9C184FB0DD00C1DD2F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */; };
 		1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */; };
+		1BC7ED41189830DF005CD635 /* NGOAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */; };
+		1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED461898326F005CD635 /* NGOMapViewController.m */; };
+		1BC7ED5018983509005CD635 /* NGOMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */; };
 		1BC7ED5F1827E84A009EC21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED5E1827E84A009EC21A /* Foundation.framework */; };
 		1BC7ED611827E84A009EC21A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED601827E84A009EC21A /* CoreGraphics.framework */; };
 		1BC7ED631827E84A009EC21A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED621827E84A009EC21A /* UIKit.framework */; };
@@ -36,7 +39,6 @@
 		1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED97182803F8009EC21A /* NearMeViewController.m */; };
 		1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED9A182821DA009EC21A /* SearchViewController.m */; };
 		21177F621852496B00009FC7 /* NGOProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21177F611852496B00009FC7 /* NGOProfile.m */; };
-		CEA996BB18859943001E1578 /* NGOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA996BA18859943001E1578 /* NGOMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,12 @@
 		1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfActivityViewController.h; sourceTree = "<group>"; };
 		1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldOfActivityViewController.m; sourceTree = "<group>"; };
+		1BC7ED3F189830DF005CD635 /* NGOAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOAnnotationView.h; sourceTree = "<group>"; };
+		1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOAnnotationView.m; sourceTree = "<group>"; };
+		1BC7ED451898326F005CD635 /* NGOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapViewController.h; sourceTree = "<group>"; };
+		1BC7ED461898326F005CD635 /* NGOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapViewController.m; sourceTree = "<group>"; };
+		1BC7ED4E18983509005CD635 /* NGOMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapAnnotation.h; sourceTree = "<group>"; };
+		1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapAnnotation.m; sourceTree = "<group>"; };
 		1BC7ED5B1827E84A009EC21A /* NGOConnectPrototype2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGOConnectPrototype2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC7ED5E1827E84A009EC21A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BC7ED601827E84A009EC21A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,8 +107,6 @@
 		1BC7ED9A182821DA009EC21A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		21177F601852496B00009FC7 /* NGOProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOProfile.h; sourceTree = "<group>"; };
 		21177F611852496B00009FC7 /* NGOProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOProfile.m; sourceTree = "<group>"; };
-		CEA996B918859943001E1578 /* NGOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapViewController.h; sourceTree = "<group>"; };
-		CEA996BA18859943001E1578 /* NGOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,8 +222,12 @@
 		1B97EE4C183CF85C00B7DCF7 /* ViewInMap */ = {
 			isa = PBXGroup;
 			children = (
-				CEA996B918859943001E1578 /* NGOMapViewController.h */,
-				CEA996BA18859943001E1578 /* NGOMapViewController.m */,
+				1BC7ED3F189830DF005CD635 /* NGOAnnotationView.h */,
+				1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */,
+				1BC7ED451898326F005CD635 /* NGOMapViewController.h */,
+				1BC7ED461898326F005CD635 /* NGOMapViewController.m */,
+				1BC7ED4E18983509005CD635 /* NGOMapAnnotation.h */,
+				1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */,
 			);
 			name = ViewInMap;
 			sourceTree = "<group>";
@@ -411,13 +421,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */,
+				1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */,
 				1BC7ED6F1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.m in Sources */,
 				1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */,
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
+				1BC7ED41189830DF005CD635 /* NGOAnnotationView.m in Sources */,
 				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
 				1BC7ED781827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m in Sources */,
 				21177F621852496B00009FC7 /* NGOProfile.m in Sources */,
 				1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */,
+				1BC7ED5018983509005CD635 /* NGOMapAnnotation.m in Sources */,
 				1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */,
 				1BC7ED751827E84A009EC21A /* NGOConnectPrototype2FirstViewController.m in Sources */,
 				1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */,
@@ -428,7 +441,6 @@
 				1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */,
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
 				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
-				CEA996BB18859943001E1578 /* NGOMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

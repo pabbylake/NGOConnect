@@ -856,10 +856,10 @@
             </objects>
             <point key="canvasLocation" x="2136" y="672"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="5ne-ON-7hj">
             <objects>
-                <viewController id="X6A-st-T8l" sceneMemberID="viewController">
+                <viewController id="X6A-st-T8l" customClass="NGOMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bCY-Oy-sRM"/>
                         <viewControllerLayoutGuide type="bottom" id="5co-lc-Kjv"/>
@@ -876,6 +876,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="BRQ-Mv-WvH"/>
+                    <connections>
+                        <outlet property="mapview" destination="kyq-f2-i6D" id="Ric-GG-XKi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBS-bK-2sK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
