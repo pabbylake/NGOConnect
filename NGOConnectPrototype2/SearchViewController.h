@@ -11,5 +11,6 @@
 @interface SearchViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *searchField;
 -(BOOL) textFieldShouldReturn:(UITextField *)textField;
+@property (weak, nonatomic) IBOutlet UINavigationItem *SearchLogo;
 
 @end

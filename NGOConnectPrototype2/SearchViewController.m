@@ -15,6 +15,7 @@
 @implementation SearchViewController
 
 @synthesize searchField = _searchField;
+@synthesize SearchLogo=_SearchLogo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    UIImage *logo= [UIImage imageNamed:@"logo.jpg"];
+    self.SearchLogo.titleView =[[UIImageView alloc] initWithImage:logo];
     [self.searchField setDelegate:self];
 }
 

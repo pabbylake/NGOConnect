@@ -9,6 +9,7 @@
 #import "NGOMapViewController.h"
 #import "NGOAnnotationView.h"
 #import "NGOMapAnnotation.h"
+#define METER_MILE 1609.344
 
 @interface NGOMapViewController ()
 
@@ -34,6 +35,33 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+-(void)viewWillAppear:(BOOL)animated{
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = -63.86;
+    zoomLocation.longitude =  101.20;
+    
+    
+    MKCoordinateRegion viewRegion =
+    MKCoordinateRegionMakeWithDistance(zoomLocation, 0.9*METER_MILE, 0.9*METER_MILE);
+    
+    [self.mapview setRegion:viewRegion animated:YES];
+    
+    self.mapview.showsUserLocation = YES;
+    
+    [self.mapview setShowsUserLocation:YES];
+    
+    
+    //make the marker
+    MKPointAnnotation * marker = [[MKPointAnnotation alloc] init];
+    //set the coodinate
+    marker.coordinate = zoomLocation;
+    marker.title = @"Amnesty International";
+    marker.subtitle = @"1 Easton Street London WC1X 0DW United Kingdom of Great Britain and Northern Ireland";
+    
+    //add the marker
+    [self.mapview addAnnotation:marker];
+
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -42,14 +70,6 @@
 }
 - (void)addPins
 {
-    _testaddress= @"11 Wilson Rd, Somerset";
-    _testname=@"Wot";
-    _testcoordinate.latitude=24.5;
-    _testcoordinate.longitude=25;
-     NGOMapAnnotation *annotation = [[NGOMapAnnotation alloc] init];
-    annotation.title=_testname;
-    annotation.address=_testaddress;
-    
-}
+   }
 
 @end

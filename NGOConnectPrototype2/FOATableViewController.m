@@ -1,25 +1,18 @@
 //
-//  SearchResultsTableViewController.m
+//  FOATableViewController.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 12/2/13.
-//  Copyright (c) 2013 Max Mendelson. All rights reserved.
+//  Created by Max Mendelson on 2/9/14.
+//  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "SearchResultsTableViewController.h"
-#import "SearchResultsCell.h"
-#import "ProfileViewController.h"
+#import "FOATableViewController.h"
 
-@interface SearchResultsTableViewController ()
+@interface FOATableViewController ()
 
 @end
 
-@implementation SearchResultsTableViewController
-
-@synthesize names = _names;
-@synthesize addresses = _addresses;
-@synthesize profile = _profile;
-@synthesize profileObject = _profileObject;
+@implementation FOATableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,13 +32,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.names=@[@"African Centre for Technology Studies",
-                 @"Action Group on Erosion, Technology and Concentration ETC Group"];
-    
-    self.addresses=@[@" St. George's House ,Parliament Road, P O Box 45917,Kenya",
-                     @"180 Metcalfe Street, Suite 206, Ottawa, ON K2P 1P5,Canada"];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,29 +44,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.names.count;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SearchResultsCell";
-    SearchResultsCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    NSInteger row = [indexPath row];
-    
-    cell.nameLabel.text = _names[row];
-    cell.addressLabel.text = self.addresses[row];
-   // cell.accreditationImage.image = [UIImage imageNamed:self.image[row]];
     
     return cell;
 }
@@ -124,36 +105,16 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
- if([[segue identifier] isEqualToString:(@"ProfileTableViewController")])
- {
-     self.profile =[segue destinationViewController];
-     [self.profile prepareForSegue:segue sender:sender];
-     
-     //Need to get the search results from a datasource object in order to
-     //create an NGOProfile object
-     
-     //Rutgers Prep is hard-coded for UI testing
-     self.profileObject = [[NGOProfile alloc]
-                           initWithName:@"Rutgers Prep School"
-                             andAddress:@"1345 Easton Ave Somerset NJ 08873"
-                           andPhoneNumber:@"7325455600"
-                           andType:@"Education"
-                           andCountry:@"USA"
-                           andRegion:@"North America"
-                           andGoal:@"Education Outreach"
-                           andEmail:@"rps@gmail.com"
-                           andUrl:@"www.rutgersprep.org"];
-     
-     self.profile.theProfile = self.profileObject;
-     
-     //NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
-     //int row = [myIndexPath row];
- }
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
+
+ */
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B138E9B18A17977006721F8 /* CustomNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B138E9A18A17976006721F8 /* CustomNav.m */; };
 		1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59263A187C8706004195A4 /* RecentsTableViewController.m */; };
 		1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592641187C8B4A004195A4 /* FavoritesTableViewController.m */; };
 		1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592645187C8B9D004195A4 /* FavoritesCell.m */; };
@@ -14,6 +15,14 @@
 		1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */; };
 		1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */; };
 		1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */; };
+		1B5B011818A6BF5900E1F64D /* bluebuttonbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */; };
+		1B5B011A18A6C1D400E1F64D /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011918A6C1D400E1F64D /* logo.jpg */; };
+		1B5B011C18A6C23100E1F64D /* searchbuttonbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */; };
+		1B5B011E18A6C51B00E1F64D /* searchlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011D18A6C51B00E1F64D /* searchlogo.jpg */; };
+		1B5B012118A6C8A100E1F64D /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012018A6C8A100E1F64D /* ProfileTableViewController.m */; };
+		1B5B012418A6CE6B00E1F64D /* ProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012318A6CE6B00E1F64D /* ProfileCell.m */; };
+		1B5B012A18A7B77800E1F64D /* FOA2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012918A7B77800E1F64D /* FOA2Cell.m */; };
+		1B5B012D18A7B79300E1F64D /* FOATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012C18A7B79300E1F64D /* FOATableViewController.m */; };
 		1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */; };
 		1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */; };
 		1B8BCE9C184FB0DD00C1DD2F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */; };
@@ -52,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B138E9918A17976006721F8 /* CustomNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNav.h; sourceTree = "<group>"; };
+		1B138E9A18A17976006721F8 /* CustomNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNav.m; sourceTree = "<group>"; };
 		1B592639187C8706004195A4 /* RecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsTableViewController.h; sourceTree = "<group>"; };
 		1B59263A187C8706004195A4 /* RecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsTableViewController.m; sourceTree = "<group>"; };
 		1B592640187C8B4A004195A4 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesTableViewController.h; path = ../FavoritesTableViewController.h; sourceTree = "<group>"; };
@@ -66,6 +77,18 @@
 		1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionCell.m; sourceTree = "<group>"; };
 		1B592650187D8A73004195A4 /* SearchCagetoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCagetoriesViewController.h; path = ../SearchCagetoriesViewController.h; sourceTree = "<group>"; };
 		1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCagetoriesViewController.m; path = ../SearchCagetoriesViewController.m; sourceTree = "<group>"; };
+		1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluebuttonbackground.jpg; sourceTree = "<group>"; };
+		1B5B011918A6C1D400E1F64D /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = searchbuttonbackground.jpg; sourceTree = "<group>"; };
+		1B5B011D18A6C51B00E1F64D /* searchlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = searchlogo.jpg; sourceTree = "<group>"; };
+		1B5B011F18A6C8A100E1F64D /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		1B5B012018A6C8A100E1F64D /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		1B5B012218A6CE6B00E1F64D /* ProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCell.h; sourceTree = "<group>"; };
+		1B5B012318A6CE6B00E1F64D /* ProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCell.m; sourceTree = "<group>"; };
+		1B5B012818A7B77800E1F64D /* FOA2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOA2Cell.h; sourceTree = "<group>"; };
+		1B5B012918A7B77800E1F64D /* FOA2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOA2Cell.m; sourceTree = "<group>"; };
+		1B5B012B18A7B79300E1F64D /* FOATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOATableViewController.h; sourceTree = "<group>"; };
+		1B5B012C18A7B79300E1F64D /* FOATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOATableViewController.m; sourceTree = "<group>"; };
 		1B8BCE8B184CE68C00C1DD2F /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
 		1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		1B8BCE8E184CEB0800C1DD2F /* SearchResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsCell.h; sourceTree = "<group>"; };
@@ -194,6 +217,10 @@
 			children = (
 				1B8BCE9A184FB0DD00C1DD2F /* ProfileViewController.h */,
 				1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */,
+				1B5B011F18A6C8A100E1F64D /* ProfileTableViewController.h */,
+				1B5B012018A6C8A100E1F64D /* ProfileTableViewController.m */,
+				1B5B012218A6CE6B00E1F64D /* ProfileCell.h */,
+				1B5B012318A6CE6B00E1F64D /* ProfileCell.m */,
 				21177F601852496B00009FC7 /* NGOProfile.h */,
 				21177F611852496B00009FC7 /* NGOProfile.m */,
 			);
@@ -237,6 +264,10 @@
 			children = (
 				1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */,
 				1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */,
+				1B5B012B18A7B79300E1F64D /* FOATableViewController.h */,
+				1B5B012C18A7B79300E1F64D /* FOATableViewController.m */,
+				1B5B012818A7B77800E1F64D /* FOA2Cell.h */,
+				1B5B012918A7B77800E1F64D /* FOA2Cell.m */,
 			);
 			name = FieldOfActivity;
 			sourceTree = "<group>";
@@ -277,6 +308,8 @@
 				1BC7ED6D1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.h */,
 				1BC7ED6E1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.m */,
 				1BC7ED701827E84A009EC21A /* Main.storyboard */,
+				1B138E9918A17976006721F8 /* CustomNav.h */,
+				1B138E9A18A17976006721F8 /* CustomNav.m */,
 				1B8BCE9D184FB11900C1DD2F /* Profile */,
 				1B97EE4A183CF83700B7DCF7 /* NearMe */,
 				1BC7ED731827E84A009EC21A /* NGOConnectPrototype2FirstViewController.h */,
@@ -296,6 +329,10 @@
 		1BC7ED651827E84A009EC21A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B5B011D18A6C51B00E1F64D /* searchlogo.jpg */,
+				1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */,
+				1B5B011918A6C1D400E1F64D /* logo.jpg */,
+				1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */,
 				1BC7ED661827E84A009EC21A /* NGOConnectPrototype2-Info.plist */,
 				1BC7ED671827E84A009EC21A /* InfoPlist.strings */,
 				1BC7ED6A1827E84A009EC21A /* main.m */,
@@ -399,9 +436,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5B011818A6BF5900E1F64D /* bluebuttonbackground.jpg in Resources */,
+				1B5B011A18A6C1D400E1F64D /* logo.jpg in Resources */,
+				1B5B011E18A6C51B00E1F64D /* searchlogo.jpg in Resources */,
 				1BC7ED7A1827E84A009EC21A /* Images.xcassets in Resources */,
 				1BC7ED691827E84A009EC21A /* InfoPlist.strings in Resources */,
 				1BC7ED721827E84A009EC21A /* Main.storyboard in Resources */,
+				1B5B011C18A6C23100E1F64D /* searchbuttonbackground.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,10 +461,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B138E9B18A17977006721F8 /* CustomNav.m in Sources */,
+				1B5B012418A6CE6B00E1F64D /* ProfileCell.m in Sources */,
 				1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */,
 				1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */,
 				1BC7ED6F1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.m in Sources */,
 				1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */,
+				1B5B012118A6C8A100E1F64D /* ProfileTableViewController.m in Sources */,
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
 				1BC7ED41189830DF005CD635 /* NGOAnnotationView.m in Sources */,
 				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
@@ -431,6 +475,8 @@
 				21177F621852496B00009FC7 /* NGOProfile.m in Sources */,
 				1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */,
 				1BC7ED5018983509005CD635 /* NGOMapAnnotation.m in Sources */,
+				1B5B012D18A7B79300E1F64D /* FOATableViewController.m in Sources */,
+				1B5B012A18A7B77800E1F64D /* FOA2Cell.m in Sources */,
 				1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */,
 				1BC7ED751827E84A009EC21A /* NGOConnectPrototype2FirstViewController.m in Sources */,
 				1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */,
