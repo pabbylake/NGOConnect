@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NGOMapViewController : : UIViewController <MKMapViewDelegate>
-
+@interface NGOMapViewController : : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic, strong) NSString *testaddress;
+@property (nonatomic, strong) NSString *testname;
 @end

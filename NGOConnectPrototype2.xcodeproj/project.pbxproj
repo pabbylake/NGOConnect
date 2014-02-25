@@ -36,6 +36,7 @@
 		1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED97182803F8009EC21A /* NearMeViewController.m */; };
 		1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED9A182821DA009EC21A /* SearchViewController.m */; };
 		21177F621852496B00009FC7 /* NGOProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21177F611852496B00009FC7 /* NGOProfile.m */; };
+		CE5146121888606800C78DFF /* NGOAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5146111888606800C78DFF /* NGOAnnotationView.m */; };
 		CEA996BB18859943001E1578 /* NGOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA996BA18859943001E1578 /* NGOMapViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,8 @@
 		1BC7ED9A182821DA009EC21A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		21177F601852496B00009FC7 /* NGOProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOProfile.h; sourceTree = "<group>"; };
 		21177F611852496B00009FC7 /* NGOProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOProfile.m; sourceTree = "<group>"; };
+		CE5146101888606800C78DFF /* NGOAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOAnnotationView.h; sourceTree = "<group>"; };
+		CE5146111888606800C78DFF /* NGOAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOAnnotationView.m; sourceTree = "<group>"; };
 		CEA996B918859943001E1578 /* NGOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapViewController.h; sourceTree = "<group>"; };
 		CEA996BA18859943001E1578 /* NGOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,9 +219,11 @@
 			isa = PBXGroup;
 			children = (
 				1B11174918847BD90025EAF8 /* NGOMapAnnonation.h */,
+				1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */,
 				CEA996B918859943001E1578 /* NGOMapViewController.h */,
 				CEA996BA18859943001E1578 /* NGOMapViewController.m */,
-				1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */,
+				CE5146101888606800C78DFF /* NGOAnnotationView.h */,
+				CE5146111888606800C78DFF /* NGOAnnotationView.m */,
 			);
 			name = ViewInMap;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
 				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
 				CEA996BB18859943001E1578 /* NGOMapViewController.m in Sources */,
+				CE5146121888606800C78DFF /* NGOAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

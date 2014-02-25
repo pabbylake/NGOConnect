@@ -7,12 +7,16 @@
 //
 
 #import "NGOMapViewController.h"
+#import "NGOAnnotationView.h"
+#import "NGOMapAnnotation.h"
 
 @interface NGOMapViewController ()
 
 @end
 
 @implementation NGOMapViewController
+@synthesize testname=_testname;
+@synthesize testaddress=_testaddress;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +37,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)addPins
+{
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    _testaddress= @"11 Wilson Rd, Somerset";
+    geocoder geocodeAddressString:_testaddress completionHandler:^(NSArray *placemarks, NSError *error);
+    if (error){return;
+    }
+    
+    
 }
 
 @end
