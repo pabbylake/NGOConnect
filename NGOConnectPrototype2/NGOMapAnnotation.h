@@ -11,7 +11,7 @@
 
 @interface NGOMapAnnotation : NSObject <MKAnnotation>
 
-@property (nonatomic, strong) NSString *title;
+
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 @end

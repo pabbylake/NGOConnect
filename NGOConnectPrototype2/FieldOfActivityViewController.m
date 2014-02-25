@@ -7,13 +7,13 @@
 //
 
 #import "FieldOfActivityViewController.h"
-
+#import "FieldOfActivityCell.h"
 @interface FieldOfActivityViewController ()
 
 @end
 
 @implementation FieldOfActivityViewController
-
+@synthesize options=_options;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -24,7 +24,7 @@
 }
 
 - (void)viewDidLoad
-{
+{ self.options=[NSArray arrayWithObjects:@"Economic and Social",@"Financing For Development",@"Gender Issues and Advancement of Women",@"Population", @"Public Adminstartion",@"Social Development",@"Statistics",@"Sustainable Development",@"Peace and Development in Africa",@"Conflict Resolution in Africa",@"NEPAD",nil];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -45,24 +45,25 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return self.options.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    static NSString *CellIdentifier = @"FieldOfActivityCell";
+    FieldOfActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSInteger row = [indexPath row];
     // Configure the cell...
-    
+    cell.optionLabel.text=self.options[row];
     return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.

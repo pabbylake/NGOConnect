@@ -130,7 +130,7 @@
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
- if([[segue identifier] isEqualToString:(@"ProfileTableViewController")])
+ if([[segue identifier] isEqualToString:(@"ProfileViewController")])
  {
      self.profile =[segue destinationViewController];
      [self.profile prepareForSegue:segue sender:sender];
@@ -140,15 +140,15 @@
      
      //Rutgers Prep is hard-coded for UI testing
      self.profileObject = [[NGOProfile alloc]
-                           initWithName:@"Rutgers Prep School"
-                             andAddress:@"1345 Easton Ave Somerset NJ 08873"
+                           initWithName:@"African Centre for Technology Studies"
+                             andAddress:@"St. George's House ,Parliament Road, P O Box 45917,Kenya"
                            andPhoneNumber:@"7325455600"
                            andType:@"Education"
-                           andCountry:@"USA"
-                           andRegion:@"North America"
+                           andCountry:@"Kenya"
+                           andRegion:@"Africa"
                            andGoal:@"Education Outreach"
-                           andEmail:@"rps@gmail.com"
-                           andUrl:@"www.rutgersprep.org"];
+                           andEmail:@"test@gmail.com"
+                           andUrl:@"www.test.org"];
      
      self.profile.theProfile = self.profileObject;
      

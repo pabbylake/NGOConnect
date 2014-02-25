@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FieldOfActivityViewController : UITableViewController
-
+@property NSArray *options;
 @end

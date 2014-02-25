@@ -37,13 +37,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    self.cagetory =[segue destinationViewController];
-    [self.cagetory prepareForSegue:segue sender:sender];
-    self.cagetory.category= self.catIdent;
-    self.cagetory.selected=[NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+    //self.cagetory =[segue destinationViewController];
+    //[self.cagetory prepareForSegue:segue sender:sender];
+   // self.cagetory.category= self.catIdent;
+    //self.cagetory.selected=[NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
+//}
 
 - (IBAction)oTypeButton:(id)sender { self.catIdent = @"oType";
    

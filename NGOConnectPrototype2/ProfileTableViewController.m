@@ -29,32 +29,36 @@
 }
 
 - (void)viewDidLoad
-{
+{ NSLog(@"%@", self.theProfile.name);
     [super viewDidLoad];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      //self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+}
+-(void) viewWillAppear:(BOOL)animated
+{
     _test2=self.theProfile.name;
     [_test addObject:_test2];
     _test2=self.theProfile.type;
     [_test addObject:_test2];
     _test2=self.theProfile.address;
-     [_test addObject:_test2];
+    [_test addObject:_test2];
     _test2=self.theProfile.country;
     [_test addObject:_test2];
     _test2=self.theProfile.region;
-     [_test addObject:_test2];
+    [_test addObject:_test2];
     _test2=self.theProfile.goal;
     [_test addObject:_test2];
     _test2=self.theProfile.phoneNumber;
-     [_test addObject:_test2];
+    [_test addObject:_test2];
     _test2=self.theProfile.email;
     [_test addObject:_test2];
     _test2=self.theProfile.url;
     [_test addObject:_test2];
-    
 }
 
 
@@ -80,7 +84,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"ProfileCell";
     ProfileCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     NSInteger row = [indexPath row];

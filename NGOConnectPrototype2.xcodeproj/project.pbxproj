@@ -47,6 +47,7 @@
 		1BC7ED8D1827E84A009EC21A /* NGOConnectPrototype2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED8C1827E84A009EC21A /* NGOConnectPrototype2Tests.m */; };
 		1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED97182803F8009EC21A /* NearMeViewController.m */; };
 		1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED9A182821DA009EC21A /* SearchViewController.m */; };
+		1BCC3C1E18ABBC250015E696 /* FieldOfActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */; };
 		21177F621852496B00009FC7 /* NGOProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21177F611852496B00009FC7 /* NGOProfile.m */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,8 @@
 		1BC7ED97182803F8009EC21A /* NearMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearMeViewController.m; sourceTree = "<group>"; };
 		1BC7ED99182821DA009EC21A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		1BC7ED9A182821DA009EC21A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		1BCC3C1C18ABBC250015E696 /* FieldOfActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfActivityCell.h; sourceTree = "<group>"; };
+		1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldOfActivityCell.m; sourceTree = "<group>"; };
 		21177F601852496B00009FC7 /* NGOProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOProfile.h; sourceTree = "<group>"; };
 		21177F611852496B00009FC7 /* NGOProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOProfile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,6 +265,8 @@
 		1B9EA23518886195005030A6 /* FieldOfActivity */ = {
 			isa = PBXGroup;
 			children = (
+				1BCC3C1C18ABBC250015E696 /* FieldOfActivityCell.h */,
+				1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */,
 				1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */,
 				1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */,
 				1B5B012B18A7B79300E1F64D /* FOATableViewController.h */,
@@ -487,6 +492,7 @@
 				1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */,
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
 				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
+				1BCC3C1E18ABBC250015E696 /* FieldOfActivityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

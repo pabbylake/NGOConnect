@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ProfileTableViewController.h"
+#import "ProfileViewController.h"
 #import "NGOProfile.h"
 
 @interface SearchResultsTableViewController : UITableViewController
 @property (nonatomic, strong) NSArray *names;
 @property (nonatomic,strong) NSArray *addresses;
-@property (nonatomic, strong) ProfileTableViewController *profile;
+@property (nonatomic, strong) ProfileViewController *profile;
 @property (nonatomic, strong) NGOProfile* profileObject;
 @end
