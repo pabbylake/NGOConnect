@@ -152,14 +152,12 @@
     // self.moreinfo.text=_test[row];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSString *email= @"lake.rutgersprep.org";
-    self.moreinfo.email=email;
+   
     if([self validateEmail:_test[row]])
     {
-        NSString *email= @"lake.rutgersprep.org";
-        self.moreinfo.email=email;
+        [self Send];
     }
-    else if([self validateUrl:_test[3]])
+    else if([self validateUrl:_test[row]])
     {
         NSString *urlAddress = @"http://www.rutgersprep.org"; //url address
         self.moreinfo.url=urlAddress;
@@ -173,6 +171,37 @@
     }
     
 }
+}
+- (void)Send{
+    
+    if([MFMailComposeViewController canSendMail])
+    { MFMailComposeViewController *mailer =[[MFMailComposeViewController alloc] init];
+        // NSData *imageData = UIImageJPGRepresentation(myImage, 24);
+        //[mailer addAttachmentData: imageData mimeType:@"image/jpeg" fileName:@"GreatGorgeLake.jpg"];
+        mailer.mailComposeDelegate = self;
+        NSString *emailBody =@"dfadfh";
+        
+        
+        [mailer setMessageBody:emailBody isHTML: YES];
+        [self presentViewController:mailer animated:YES completion:nil];
+        
+    }
+    else
+    {
+        //error message
+        UIAlertView *errormessage=
+        [[UIAlertView alloc] initWithTitle:@"ERROR"
+                                   message:@"You entered an invalid number"
+                                  delegate: nil
+                         cancelButtonTitle:@"OK"
+                         otherButtonTitles: @"Press", Nil];
+        [errormessage show];
+    }
+}
+-(void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
