@@ -152,7 +152,8 @@
     // self.moreinfo.text=_test[row];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
+    NSString *email= @"lake.rutgersprep.org";
+    self.moreinfo.email=email;
     if([self validateEmail:_test[row]])
     {
         NSString *email= @"lake.rutgersprep.org";
