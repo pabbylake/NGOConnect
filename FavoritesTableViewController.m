@@ -38,7 +38,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
     self.names=@[@"African Centre for Technology Studies",
@@ -143,7 +143,7 @@
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if([[segue identifier] isEqualToString:(@"ProfileViewController")])
+    if([[segue identifier] isEqualToString:(@"ProfileTableViewController")])
     {
         self.profile =[segue destinationViewController];
         [self.profile prepareForSegue:segue sender:sender];

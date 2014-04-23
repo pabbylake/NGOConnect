@@ -24,7 +24,6 @@
 @synthesize urlTextView = _urlTextView;
 @synthesize phoneNumberButton = _phoneNumberButton;
 @synthesize emailButton = _emailButton;
-@synthesize annotation= _annotation;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

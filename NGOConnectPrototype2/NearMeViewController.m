@@ -107,12 +107,12 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 43.3482;
-    zoomLocation.longitude =  -75.1890;
+    zoomLocation.latitude = 51.5259;
+    zoomLocation.longitude =  -0.1113;
     
     
     MKCoordinateRegion viewRegion =
-    MKCoordinateRegionMakeWithDistance(zoomLocation, 0.9*METER_MILE, 0.9*METER_MILE);
+    MKCoordinateRegionMakeWithDistance(zoomLocation, 4*4000, 4*4000);
     
     [self.map setRegion:viewRegion animated:YES];
     
@@ -125,13 +125,32 @@
     MKPointAnnotation * marker = [[MKPointAnnotation alloc] init];
     //set the coodinate
     marker.coordinate = zoomLocation;
-    marker.title = @"Test";
-    marker.subtitle = @"small test";
+    marker.title = @"Amnesty International";
+    marker.subtitle = @"1 Easton Street London WC1X 0DW United Kingdom of Great Britain and Northern Ireland";
     
     //add the marker
     [self.map addAnnotation:marker];
+    //make the marker
+    MKPointAnnotation *marker2 = [[MKPointAnnotation alloc] init];
+    zoomLocation.latitude = 51.5482;
+    zoomLocation.longitude =  -0.2018;
+    //set the coodinate
+    marker2.coordinate = zoomLocation;
+    marker2.title = @"Anglican Consultative Council";
+    marker2.subtitle = @"16 Tavistock Crescent Westbourne Park, London W11 1AP United Kingdom of Great Britain and Northern Ireland";
+    
+    //make the marker
+    MKPointAnnotation *marker3 = [[MKPointAnnotation alloc] init];
+    zoomLocation.latitude = 51.5491;
+    zoomLocation.longitude =  -0.0727;
+    //set the coodinate
+    marker3.coordinate = zoomLocation;
+    marker3.title = @"Acronym Institute for Disarmament Diplomacy, The";
+    marker3.subtitle = @"24, Colvestone Crescent London England E8 2LH United Kingdom";
     
     
+    [self.map addAnnotation:marker2];
+    [self.map addAnnotation:marker3];
     
     //Getting user's current location
     CLLocationCoordinate2D userCoord;

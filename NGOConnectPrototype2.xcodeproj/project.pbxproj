@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B11174B18847BD90025EAF8 /* NGOMapAnnonation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */; };
+		1B138E9B18A17977006721F8 /* CustomNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B138E9A18A17976006721F8 /* CustomNav.m */; };
 		1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59263A187C8706004195A4 /* RecentsTableViewController.m */; };
 		1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592641187C8B4A004195A4 /* FavoritesTableViewController.m */; };
 		1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592645187C8B9D004195A4 /* FavoritesCell.m */; };
@@ -15,9 +15,21 @@
 		1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */; };
 		1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */; };
 		1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */; };
+		1B5B011818A6BF5900E1F64D /* bluebuttonbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */; };
+		1B5B011A18A6C1D400E1F64D /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011918A6C1D400E1F64D /* logo.jpg */; };
+		1B5B011C18A6C23100E1F64D /* searchbuttonbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */; };
+		1B5B011E18A6C51B00E1F64D /* searchlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011D18A6C51B00E1F64D /* searchlogo.jpg */; };
+		1B5B012118A6C8A100E1F64D /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012018A6C8A100E1F64D /* ProfileTableViewController.m */; };
+		1B5B012418A6CE6B00E1F64D /* ProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012318A6CE6B00E1F64D /* ProfileCell.m */; };
+		1B5B012A18A7B77800E1F64D /* FOA2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012918A7B77800E1F64D /* FOA2Cell.m */; };
+		1B5B012D18A7B79300E1F64D /* FOATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012C18A7B79300E1F64D /* FOATableViewController.m */; };
 		1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */; };
 		1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */; };
 		1B8BCE9C184FB0DD00C1DD2F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */; };
+		1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */; };
+		1BC7ED41189830DF005CD635 /* NGOAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */; };
+		1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED461898326F005CD635 /* NGOMapViewController.m */; };
+		1BC7ED5018983509005CD635 /* NGOMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */; };
 		1BC7ED5F1827E84A009EC21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED5E1827E84A009EC21A /* Foundation.framework */; };
 		1BC7ED611827E84A009EC21A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED601827E84A009EC21A /* CoreGraphics.framework */; };
 		1BC7ED631827E84A009EC21A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED621827E84A009EC21A /* UIKit.framework */; };
@@ -35,9 +47,13 @@
 		1BC7ED8D1827E84A009EC21A /* NGOConnectPrototype2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED8C1827E84A009EC21A /* NGOConnectPrototype2Tests.m */; };
 		1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED97182803F8009EC21A /* NearMeViewController.m */; };
 		1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED9A182821DA009EC21A /* SearchViewController.m */; };
+		1BCC3C1E18ABBC250015E696 /* FieldOfActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */; };
 		21177F621852496B00009FC7 /* NGOProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21177F611852496B00009FC7 /* NGOProfile.m */; };
+<<<<<<< HEAD
 		CE5146121888606800C78DFF /* NGOAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5146111888606800C78DFF /* NGOAnnotationView.m */; };
 		CEA996BB18859943001E1578 /* NGOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA996BA18859943001E1578 /* NGOMapViewController.m */; };
+=======
+>>>>>>> 4f5283acd296154b1f73bc80d8d7aaef6a6ab039
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B11174918847BD90025EAF8 /* NGOMapAnnonation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapAnnonation.h; sourceTree = "<group>"; };
-		1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapAnnonation.m; sourceTree = "<group>"; };
+		1B138E9918A17976006721F8 /* CustomNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNav.h; sourceTree = "<group>"; };
+		1B138E9A18A17976006721F8 /* CustomNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNav.m; sourceTree = "<group>"; };
 		1B592639187C8706004195A4 /* RecentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsTableViewController.h; sourceTree = "<group>"; };
 		1B59263A187C8706004195A4 /* RecentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsTableViewController.m; sourceTree = "<group>"; };
 		1B592640187C8B4A004195A4 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesTableViewController.h; path = ../FavoritesTableViewController.h; sourceTree = "<group>"; };
@@ -67,12 +83,32 @@
 		1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionCell.m; sourceTree = "<group>"; };
 		1B592650187D8A73004195A4 /* SearchCagetoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCagetoriesViewController.h; path = ../SearchCagetoriesViewController.h; sourceTree = "<group>"; };
 		1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCagetoriesViewController.m; path = ../SearchCagetoriesViewController.m; sourceTree = "<group>"; };
+		1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluebuttonbackground.jpg; sourceTree = "<group>"; };
+		1B5B011918A6C1D400E1F64D /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = searchbuttonbackground.jpg; sourceTree = "<group>"; };
+		1B5B011D18A6C51B00E1F64D /* searchlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = searchlogo.jpg; sourceTree = "<group>"; };
+		1B5B011F18A6C8A100E1F64D /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		1B5B012018A6C8A100E1F64D /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		1B5B012218A6CE6B00E1F64D /* ProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCell.h; sourceTree = "<group>"; };
+		1B5B012318A6CE6B00E1F64D /* ProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCell.m; sourceTree = "<group>"; };
+		1B5B012818A7B77800E1F64D /* FOA2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOA2Cell.h; sourceTree = "<group>"; };
+		1B5B012918A7B77800E1F64D /* FOA2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOA2Cell.m; sourceTree = "<group>"; };
+		1B5B012B18A7B79300E1F64D /* FOATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOATableViewController.h; sourceTree = "<group>"; };
+		1B5B012C18A7B79300E1F64D /* FOATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOATableViewController.m; sourceTree = "<group>"; };
 		1B8BCE8B184CE68C00C1DD2F /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
 		1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		1B8BCE8E184CEB0800C1DD2F /* SearchResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsCell.h; sourceTree = "<group>"; };
 		1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsCell.m; sourceTree = "<group>"; };
 		1B8BCE9A184FB0DD00C1DD2F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfActivityViewController.h; sourceTree = "<group>"; };
+		1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldOfActivityViewController.m; sourceTree = "<group>"; };
+		1BC7ED3F189830DF005CD635 /* NGOAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOAnnotationView.h; sourceTree = "<group>"; };
+		1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOAnnotationView.m; sourceTree = "<group>"; };
+		1BC7ED451898326F005CD635 /* NGOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapViewController.h; sourceTree = "<group>"; };
+		1BC7ED461898326F005CD635 /* NGOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapViewController.m; sourceTree = "<group>"; };
+		1BC7ED4E18983509005CD635 /* NGOMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapAnnotation.h; sourceTree = "<group>"; };
+		1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapAnnotation.m; sourceTree = "<group>"; };
 		1BC7ED5B1827E84A009EC21A /* NGOConnectPrototype2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGOConnectPrototype2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC7ED5E1827E84A009EC21A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BC7ED601827E84A009EC21A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,12 +134,17 @@
 		1BC7ED97182803F8009EC21A /* NearMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearMeViewController.m; sourceTree = "<group>"; };
 		1BC7ED99182821DA009EC21A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		1BC7ED9A182821DA009EC21A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		1BCC3C1C18ABBC250015E696 /* FieldOfActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfActivityCell.h; sourceTree = "<group>"; };
+		1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldOfActivityCell.m; sourceTree = "<group>"; };
 		21177F601852496B00009FC7 /* NGOProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOProfile.h; sourceTree = "<group>"; };
 		21177F611852496B00009FC7 /* NGOProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOProfile.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CE5146101888606800C78DFF /* NGOAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOAnnotationView.h; sourceTree = "<group>"; };
 		CE5146111888606800C78DFF /* NGOAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOAnnotationView.m; sourceTree = "<group>"; };
 		CEA996B918859943001E1578 /* NGOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapViewController.h; sourceTree = "<group>"; };
 		CEA996BA18859943001E1578 /* NGOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapViewController.m; sourceTree = "<group>"; };
+=======
+>>>>>>> 4f5283acd296154b1f73bc80d8d7aaef6a6ab039
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +211,7 @@
 				1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */,
 				1B59264A187D7E86004195A4 /* SearchSelectionTableViewController.h */,
 				1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */,
+				1B9EA23518886195005030A6 /* FieldOfActivity */,
 			);
 			name = AdvancedSearch;
 			sourceTree = "<group>";
@@ -190,6 +232,10 @@
 			children = (
 				1B8BCE9A184FB0DD00C1DD2F /* ProfileViewController.h */,
 				1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */,
+				1B5B011F18A6C8A100E1F64D /* ProfileTableViewController.h */,
+				1B5B012018A6C8A100E1F64D /* ProfileTableViewController.m */,
+				1B5B012218A6CE6B00E1F64D /* ProfileCell.h */,
+				1B5B012318A6CE6B00E1F64D /* ProfileCell.m */,
 				21177F601852496B00009FC7 /* NGOProfile.h */,
 				21177F611852496B00009FC7 /* NGOProfile.m */,
 			);
@@ -218,14 +264,38 @@
 		1B97EE4C183CF85C00B7DCF7 /* ViewInMap */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				1B11174918847BD90025EAF8 /* NGOMapAnnonation.h */,
 				1B11174A18847BD90025EAF8 /* NGOMapAnnonation.m */,
 				CEA996B918859943001E1578 /* NGOMapViewController.h */,
 				CEA996BA18859943001E1578 /* NGOMapViewController.m */,
 				CE5146101888606800C78DFF /* NGOAnnotationView.h */,
 				CE5146111888606800C78DFF /* NGOAnnotationView.m */,
+=======
+				1BC7ED3F189830DF005CD635 /* NGOAnnotationView.h */,
+				1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */,
+				1BC7ED451898326F005CD635 /* NGOMapViewController.h */,
+				1BC7ED461898326F005CD635 /* NGOMapViewController.m */,
+				1BC7ED4E18983509005CD635 /* NGOMapAnnotation.h */,
+				1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */,
+>>>>>>> 4f5283acd296154b1f73bc80d8d7aaef6a6ab039
 			);
 			name = ViewInMap;
+			sourceTree = "<group>";
+		};
+		1B9EA23518886195005030A6 /* FieldOfActivity */ = {
+			isa = PBXGroup;
+			children = (
+				1BCC3C1C18ABBC250015E696 /* FieldOfActivityCell.h */,
+				1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */,
+				1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */,
+				1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */,
+				1B5B012B18A7B79300E1F64D /* FOATableViewController.h */,
+				1B5B012C18A7B79300E1F64D /* FOATableViewController.m */,
+				1B5B012818A7B77800E1F64D /* FOA2Cell.h */,
+				1B5B012918A7B77800E1F64D /* FOA2Cell.m */,
+			);
+			name = FieldOfActivity;
 			sourceTree = "<group>";
 		};
 		1BC7ED521827E84A009EC21A = {
@@ -264,6 +334,8 @@
 				1BC7ED6D1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.h */,
 				1BC7ED6E1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.m */,
 				1BC7ED701827E84A009EC21A /* Main.storyboard */,
+				1B138E9918A17976006721F8 /* CustomNav.h */,
+				1B138E9A18A17976006721F8 /* CustomNav.m */,
 				1B8BCE9D184FB11900C1DD2F /* Profile */,
 				1B97EE4A183CF83700B7DCF7 /* NearMe */,
 				1BC7ED731827E84A009EC21A /* NGOConnectPrototype2FirstViewController.h */,
@@ -283,6 +355,10 @@
 		1BC7ED651827E84A009EC21A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B5B011D18A6C51B00E1F64D /* searchlogo.jpg */,
+				1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */,
+				1B5B011918A6C1D400E1F64D /* logo.jpg */,
+				1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */,
 				1BC7ED661827E84A009EC21A /* NGOConnectPrototype2-Info.plist */,
 				1BC7ED671827E84A009EC21A /* InfoPlist.strings */,
 				1BC7ED6A1827E84A009EC21A /* main.m */,
@@ -386,9 +462,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5B011818A6BF5900E1F64D /* bluebuttonbackground.jpg in Resources */,
+				1B5B011A18A6C1D400E1F64D /* logo.jpg in Resources */,
+				1B5B011E18A6C51B00E1F64D /* searchlogo.jpg in Resources */,
 				1BC7ED7A1827E84A009EC21A /* Images.xcassets in Resources */,
 				1BC7ED691827E84A009EC21A /* InfoPlist.strings in Resources */,
 				1BC7ED721827E84A009EC21A /* Main.storyboard in Resources */,
+				1B5B011C18A6C23100E1F64D /* searchbuttonbackground.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,15 +487,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B138E9B18A17977006721F8 /* CustomNav.m in Sources */,
+				1B5B012418A6CE6B00E1F64D /* ProfileCell.m in Sources */,
 				1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */,
+				1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */,
 				1BC7ED6F1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.m in Sources */,
 				1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */,
+				1B5B012118A6C8A100E1F64D /* ProfileTableViewController.m in Sources */,
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
+				1BC7ED41189830DF005CD635 /* NGOAnnotationView.m in Sources */,
 				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
 				1BC7ED781827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m in Sources */,
-				1B11174B18847BD90025EAF8 /* NGOMapAnnonation.m in Sources */,
 				21177F621852496B00009FC7 /* NGOProfile.m in Sources */,
 				1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */,
+				1BC7ED5018983509005CD635 /* NGOMapAnnotation.m in Sources */,
+				1B5B012D18A7B79300E1F64D /* FOATableViewController.m in Sources */,
+				1B5B012A18A7B77800E1F64D /* FOA2Cell.m in Sources */,
 				1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */,
 				1BC7ED751827E84A009EC21A /* NGOConnectPrototype2FirstViewController.m in Sources */,
 				1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */,
@@ -423,10 +510,15 @@
 				1B592649187D040E004195A4 /* RecentsCell.m in Sources */,
 				1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */,
 				1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */,
+				1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */,
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
 				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
+<<<<<<< HEAD
 				CEA996BB18859943001E1578 /* NGOMapViewController.m in Sources */,
 				CE5146121888606800C78DFF /* NGOAnnotationView.m in Sources */,
+=======
+				1BCC3C1E18ABBC250015E696 /* FieldOfActivityCell.m in Sources */,
+>>>>>>> 4f5283acd296154b1f73bc80d8d7aaef6a6ab039
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

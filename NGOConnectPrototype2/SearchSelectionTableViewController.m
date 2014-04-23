@@ -17,7 +17,7 @@
 
 @synthesize oType = _oType;
 @synthesize mDG = _mDG;
-@synthesize languages = _languages;
+@synthesize country = _country;
 @synthesize fOA = _fOA;
 @synthesize geoScope = _geoScope;
 @synthesize accreditation = _accreditation;
@@ -36,7 +36,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -51,7 +51,7 @@
     {
         self.selected = [NSArray arrayWithObjects:@"Eradicate Extreme Poverty and Hunger", @"Achieve Universal Primary Education", @"Combat HIV/AIDS, Malaria, and Other Diseases", @"Develop Globl Partnership For Development", @"Ensure Environmental Sustainability", @"Improve Maternal Health", @"Promote Gender Equality and Empower Women", @"Reduce Child Mortality", nil];
     }
-    else if((_category = @"languages"))
+    else if((_category = @"country"))
     {
         
     }
@@ -63,19 +63,19 @@
 
     else if((_category = @"geoScope"))
     {
-        
+        self.selected = [NSArray arrayWithObjects:@"International", @"Regional", @"National",@"Local", nil];
     }
 
     else if((_category = @"accreditation"))
     {
-        
+       self.selected = [NSArray arrayWithObjects:@"DPI", @"ECOSOC", @"Other", nil];
     }
 
     else if((_category = @"cStatus"))
     {
-        self.cStatus = [NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
+        self.selected = [NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
     }
-
+[super viewDidLoad];
     
 }
 
