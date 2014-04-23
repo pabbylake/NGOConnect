@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "NGOProfile.h"
 #import "NGOMapAnnonation.h"
-
+#import "NGOMoreInfoControllerViewController.h"
 
 @interface ProfileTableViewController : UITableViewController
 @property (nonatomic, strong) NGOProfile *theProfile;
 @property (nonatomic, strong) NSMutableArray *test;
+@property (nonatomic, strong) NSMutableArray *array;
 @property (nonatomic,strong) NSString *test2;
+@property (nonatomic,strong) NGOMoreInfoControllerViewController* moreinfo;
 @end

@@ -20,7 +20,7 @@
 @synthesize addresses = _addresses;
 @synthesize profile = _profile;
 @synthesize profileObject = _profileObject;
-
+@synthesize array=_array;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -39,7 +39,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     self.names=@[@"African Centre for Technology Studies",
                  @"Action Group on Erosion, Technology and Concentration ETC Group"];
     
@@ -149,9 +148,18 @@
                            andGoal:@"Education Outreach"
                            andEmail:@"test@gmail.com"
                            andUrl:@"www.test.org"];
-     
+     self.array=[[NSMutableArray alloc]init];
+
      self.profile.theProfile = self.profileObject;
+     [self.array addObject:self.profileObject.name];
      
+     [_array addObject:self.profileObject.address];
+    [_array addObject:self.profileObject.country];
+     [_array addObject:self.profileObject.url];
+     [_array addObject:self.profileObject.phoneNumber];
+     [_array addObject:self.profileObject.email];
+     self.profile.array=self.array;
+
      //NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
      //int row = [myIndexPath row];
  }

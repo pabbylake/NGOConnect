@@ -7,8 +7,8 @@
 //
 
 #import "NGOMapViewController.h"
-#import "NGOAnnotationView.h"
 #import "NGOMapAnnotation.h"
+#import "CalloutAnnotation.h"
 #define METER_MILE 1609.344
 
 @interface NGOMapViewController ()

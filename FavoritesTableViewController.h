@@ -13,6 +13,7 @@
 @interface FavoritesTableViewController : UITableViewController
 @property (nonatomic, strong) NSArray *names;
 @property (nonatomic,strong) NSArray *addresses;
+@property (nonatomic,strong) NSMutableArray *array;
 @property (nonatomic, strong) ProfileTableViewController *profile;
 @property (nonatomic, strong) NGOProfile* profileObject;
 - (IBAction)editButton:(UIBarButtonItem *)sender;

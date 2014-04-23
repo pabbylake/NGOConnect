@@ -27,7 +27,6 @@
 		1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */; };
 		1B8BCE9C184FB0DD00C1DD2F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */; };
 		1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */; };
-		1BC7ED41189830DF005CD635 /* NGOAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */; };
 		1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED461898326F005CD635 /* NGOMapViewController.m */; };
 		1BC7ED5018983509005CD635 /* NGOMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */; };
 		1BC7ED5F1827E84A009EC21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED5E1827E84A009EC21A /* Foundation.framework */; };
@@ -48,7 +47,14 @@
 		1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED97182803F8009EC21A /* NearMeViewController.m */; };
 		1BC7ED9B182821DA009EC21A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED9A182821DA009EC21A /* SearchViewController.m */; };
 		1BCC3C1E18ABBC250015E696 /* FieldOfActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */; };
+		1BCC44A11906A8F900C25664 /* NGOMoreInfoControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCC44A01906A8F900C25664 /* NGOMoreInfoControllerViewController.m */; };
+		1BCC44A31906AC9400C25664 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCC44A21906AC9400C25664 /* MessageUI.framework */; };
+		210449B718F58728002C0C78 /* bubble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210449B618F58728002C0C78 /* bubble.jpg */; };
 		21177F621852496B00009FC7 /* NGOProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21177F611852496B00009FC7 /* NGOProfile.m */; };
+		2128F5FA18EB418100582999 /* PinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2128F5F518EB418100582999 /* PinAnnotation.m */; };
+		2128F5FB18EB418100582999 /* CalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2128F5F718EB418100582999 /* CalloutAnnotation.m */; };
+		2128F5FC18EB418100582999 /* CalloutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2128F5F918EB418100582999 /* CalloutAnnotationView.m */; };
+		212ABABE18EF2CE600FE6ABC /* NGOCustomMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212ABABD18EF2CE600FE6ABC /* NGOCustomMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,8 +104,6 @@
 		1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfActivityViewController.h; sourceTree = "<group>"; };
 		1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldOfActivityViewController.m; sourceTree = "<group>"; };
-		1BC7ED3F189830DF005CD635 /* NGOAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOAnnotationView.h; sourceTree = "<group>"; };
-		1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOAnnotationView.m; sourceTree = "<group>"; };
 		1BC7ED451898326F005CD635 /* NGOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapViewController.h; sourceTree = "<group>"; };
 		1BC7ED461898326F005CD635 /* NGOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapViewController.m; sourceTree = "<group>"; };
 		1BC7ED4E18983509005CD635 /* NGOMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapAnnotation.h; sourceTree = "<group>"; };
@@ -131,8 +135,20 @@
 		1BC7ED9A182821DA009EC21A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		1BCC3C1C18ABBC250015E696 /* FieldOfActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfActivityCell.h; sourceTree = "<group>"; };
 		1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldOfActivityCell.m; sourceTree = "<group>"; };
+		1BCC449F1906A8F900C25664 /* NGOMoreInfoControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMoreInfoControllerViewController.h; sourceTree = "<group>"; };
+		1BCC44A01906A8F900C25664 /* NGOMoreInfoControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMoreInfoControllerViewController.m; sourceTree = "<group>"; };
+		1BCC44A21906AC9400C25664 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		210449B618F58728002C0C78 /* bubble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bubble.jpg; sourceTree = "<group>"; };
 		21177F601852496B00009FC7 /* NGOProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOProfile.h; sourceTree = "<group>"; };
 		21177F611852496B00009FC7 /* NGOProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOProfile.m; sourceTree = "<group>"; };
+		2128F5F418EB418100582999 /* PinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinAnnotation.h; sourceTree = "<group>"; };
+		2128F5F518EB418100582999 /* PinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinAnnotation.m; sourceTree = "<group>"; };
+		2128F5F618EB418100582999 /* CalloutAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutAnnotation.h; sourceTree = "<group>"; };
+		2128F5F718EB418100582999 /* CalloutAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutAnnotation.m; sourceTree = "<group>"; };
+		2128F5F818EB418100582999 /* CalloutAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutAnnotationView.h; sourceTree = "<group>"; };
+		2128F5F918EB418100582999 /* CalloutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutAnnotationView.m; sourceTree = "<group>"; };
+		212ABABC18EF2CE600FE6ABC /* NGOCustomMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOCustomMapViewController.h; sourceTree = "<group>"; };
+		212ABABD18EF2CE600FE6ABC /* NGOCustomMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOCustomMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCC44A31906AC9400C25664 /* MessageUI.framework in Frameworks */,
 				1BC7ED611827E84A009EC21A /* CoreGraphics.framework in Frameworks */,
 				1BC7ED631827E84A009EC21A /* UIKit.framework in Frameworks */,
 				1BC7ED5F1827E84A009EC21A /* Foundation.framework in Frameworks */,
@@ -222,6 +239,8 @@
 				1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */,
 				1B5B011F18A6C8A100E1F64D /* ProfileTableViewController.h */,
 				1B5B012018A6C8A100E1F64D /* ProfileTableViewController.m */,
+				1BCC449F1906A8F900C25664 /* NGOMoreInfoControllerViewController.h */,
+				1BCC44A01906A8F900C25664 /* NGOMoreInfoControllerViewController.m */,
 				1B5B012218A6CE6B00E1F64D /* ProfileCell.h */,
 				1B5B012318A6CE6B00E1F64D /* ProfileCell.m */,
 				21177F601852496B00009FC7 /* NGOProfile.h */,
@@ -252,8 +271,14 @@
 		1B97EE4C183CF85C00B7DCF7 /* ViewInMap */ = {
 			isa = PBXGroup;
 			children = (
-				1BC7ED3F189830DF005CD635 /* NGOAnnotationView.h */,
-				1BC7ED40189830DF005CD635 /* NGOAnnotationView.m */,
+				212ABABC18EF2CE600FE6ABC /* NGOCustomMapViewController.h */,
+				212ABABD18EF2CE600FE6ABC /* NGOCustomMapViewController.m */,
+				2128F5F418EB418100582999 /* PinAnnotation.h */,
+				2128F5F518EB418100582999 /* PinAnnotation.m */,
+				2128F5F618EB418100582999 /* CalloutAnnotation.h */,
+				2128F5F718EB418100582999 /* CalloutAnnotation.m */,
+				2128F5F818EB418100582999 /* CalloutAnnotationView.h */,
+				2128F5F918EB418100582999 /* CalloutAnnotationView.m */,
 				1BC7ED451898326F005CD635 /* NGOMapViewController.h */,
 				1BC7ED461898326F005CD635 /* NGOMapViewController.m */,
 				1BC7ED4E18983509005CD635 /* NGOMapAnnotation.h */,
@@ -299,6 +324,7 @@
 		1BC7ED5D1827E84A009EC21A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BCC44A21906AC9400C25664 /* MessageUI.framework */,
 				1BC7ED5E1827E84A009EC21A /* Foundation.framework */,
 				1BC7ED601827E84A009EC21A /* CoreGraphics.framework */,
 				1BC7ED621827E84A009EC21A /* UIKit.framework */,
@@ -318,11 +344,11 @@
 				1B8BCE9D184FB11900C1DD2F /* Profile */,
 				1B97EE4A183CF83700B7DCF7 /* NearMe */,
 				1BC7ED731827E84A009EC21A /* NGOConnectPrototype2FirstViewController.h */,
-				1BC7ED761827E84A009EC21A /* NGOConnectPrototype2SecondViewController.h */,
 				1BC7ED741827E84A009EC21A /* NGOConnectPrototype2FirstViewController.m */,
+				1BC7ED761827E84A009EC21A /* NGOConnectPrototype2SecondViewController.h */,
+				1BC7ED771827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m */,
 				1B59263C187C870D004195A4 /* Recents */,
 				1B592643187C8B4E004195A4 /* Favorites */,
-				1BC7ED771827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m */,
 				1B97EE4C183CF85C00B7DCF7 /* ViewInMap */,
 				1B97EE4B183CF84F00B7DCF7 /* Search */,
 				1BC7ED791827E84A009EC21A /* Images.xcassets */,
@@ -334,6 +360,7 @@
 		1BC7ED651827E84A009EC21A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				210449B618F58728002C0C78 /* bubble.jpg */,
 				1B5B011D18A6C51B00E1F64D /* searchlogo.jpg */,
 				1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */,
 				1B5B011918A6C1D400E1F64D /* logo.jpg */,
@@ -409,7 +436,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NGOConnectPrototype2;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Max Mendelson";
 				TargetAttributes = {
 					1BC7ED7E1827E84A009EC21A = {
@@ -446,6 +473,7 @@
 				1B5B011E18A6C51B00E1F64D /* searchlogo.jpg in Resources */,
 				1BC7ED7A1827E84A009EC21A /* Images.xcassets in Resources */,
 				1BC7ED691827E84A009EC21A /* InfoPlist.strings in Resources */,
+				210449B718F58728002C0C78 /* bubble.jpg in Resources */,
 				1BC7ED721827E84A009EC21A /* Main.storyboard in Resources */,
 				1B5B011C18A6C23100E1F64D /* searchbuttonbackground.jpg in Resources */,
 			);
@@ -470,11 +498,14 @@
 				1B5B012418A6CE6B00E1F64D /* ProfileCell.m in Sources */,
 				1B592646187C8B9D004195A4 /* FavoritesCell.m in Sources */,
 				1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */,
+				2128F5FA18EB418100582999 /* PinAnnotation.m in Sources */,
 				1BC7ED6F1827E84A009EC21A /* NGOConnectPrototype2AppDelegate.m in Sources */,
+				2128F5FC18EB418100582999 /* CalloutAnnotationView.m in Sources */,
+				2128F5FB18EB418100582999 /* CalloutAnnotation.m in Sources */,
 				1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */,
 				1B5B012118A6C8A100E1F64D /* ProfileTableViewController.m in Sources */,
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
-				1BC7ED41189830DF005CD635 /* NGOAnnotationView.m in Sources */,
+				212ABABE18EF2CE600FE6ABC /* NGOCustomMapViewController.m in Sources */,
 				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
 				1BC7ED781827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m in Sources */,
 				21177F621852496B00009FC7 /* NGOProfile.m in Sources */,
@@ -492,6 +523,7 @@
 				1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */,
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
 				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
+				1BCC44A11906A8F900C25664 /* NGOMoreInfoControllerViewController.m in Sources */,
 				1BCC3C1E18ABBC250015E696 /* FieldOfActivityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,7 +578,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -585,7 +616,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -643,7 +673,6 @@
 		1BC7ED941827E84A009EC21A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NGOConnectPrototype2.app/NGOConnectPrototype2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -666,7 +695,6 @@
 		1BC7ED951827E84A009EC21A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NGOConnectPrototype2.app/NGOConnectPrototype2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

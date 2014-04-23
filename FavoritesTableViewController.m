@@ -20,6 +20,7 @@
 @synthesize addresses = _addresses;
 @synthesize profile = _profile;
 @synthesize profileObject = _profileObject;
+@synthesize array=_array;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,7 +34,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -143,6 +143,7 @@
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
     if([[segue identifier] isEqualToString:(@"ProfileTableViewController")])
     {
         self.profile =[segue destinationViewController];
@@ -153,23 +154,28 @@
         
         //Rutgers Prep is hard-coded for UI testing
         self.profileObject = [[NGOProfile alloc]
-                              initWithName:@"Rutgers Prep School"
-                              andAddress:@"1345 Easton Ave Somerset NJ 08873"
+                              initWithName:@"African Centre for Technology Studies"
+                              andAddress:@"St. George's House ,Parliament Road, P O Box 45917,Kenya"
                               andPhoneNumber:@"7325455600"
                               andType:@"Education"
-                              andCountry:@"USA"
-                              andRegion:@"North America"
+                              andCountry:@"Kenya"
+                              andRegion:@"Africa"
                               andGoal:@"Education Outreach"
-                              andEmail:@"rps@gmail.com"
-                              andUrl:@"www.rutgersprep.org"];
-        
-        self.profile.theProfile = self.profileObject;
-        
-        //NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
-        //int row = [myIndexPath row];
-    }
-}
+                              andEmail:@"test@gmail.com"
+                              andUrl:@"www.test.org"];
+        self.array=[[NSMutableArray alloc]init];
 
+        self.profile.theProfile = self.profileObject;
+        [self.array addObject:self.profileObject.name];
+        
+        [_array addObject:self.profileObject.address];
+        [_array addObject:self.profileObject.country];
+        [_array addObject:self.profileObject.url];
+        [_array addObject:self.profileObject.phoneNumber];
+        [_array addObject:self.profileObject.email];
+        self.profile.array=self.array;
+}
+}
 
 
 - (IBAction)editButton:(UIBarButtonItem *)sender
