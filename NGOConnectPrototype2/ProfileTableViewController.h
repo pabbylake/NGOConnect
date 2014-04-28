@@ -10,10 +10,15 @@
 #import "NGOProfile.h"
 #import "NGOMapAnnonation.h"
 #import "NGOMoreInfoControllerViewController.h"
+#import <MessageUI/MessageUI.h>
 
+<<<<<<< HEAD
 #import <MessageUI/MessageUI.h>
 
 @interface ProfileTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
+=======
+@interface ProfileTableViewController : UITableViewController<MFMailComposeViewControllerDelegate>
+>>>>>>> FETCH_HEAD
 @property (nonatomic, strong) NGOProfile *theProfile;
 @property (nonatomic, strong) NSMutableArray *test;
 @property (nonatomic, strong) NSMutableArray *array;

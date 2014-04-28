@@ -775,7 +775,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="genericTVLabel" destination="dTy-d6-3HI" id="JIY-sw-HWI"/>
-                                    <segue destination="vqY-Rk-UvQ" kind="push" id="dhX-r7-YIh"/>
+                                    <segue destination="vqY-Rk-UvQ" kind="push" identifier="MoreInfo" id="dhX-r7-YIh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

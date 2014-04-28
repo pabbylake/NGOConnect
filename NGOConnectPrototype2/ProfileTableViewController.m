@@ -152,14 +152,12 @@
     // self.moreinfo.text=_test[row];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSString *email= @"lake.rutgersprep.org";
-    self.moreinfo.email=email;
+   
     if([self validateEmail:_test[row]])
     {
-        NSString *email= @"lake.rutgersprep.org";
-        self.moreinfo.email=email;
+        [self Send];
     }
-    else if([self validateUrl:_test[3]])
+    else if([self validateUrl:_test[row]])
     {
         NSString *urlAddress = @"http://www.rutgersprep.org"; //url address
         self.moreinfo.url=urlAddress;
@@ -174,8 +172,12 @@
     
 }
 }
+<<<<<<< HEAD
 - (void)Send
 {
+=======
+- (void)Send{
+>>>>>>> FETCH_HEAD
     
     if([MFMailComposeViewController canSendMail])
     { MFMailComposeViewController *mailer =[[MFMailComposeViewController alloc] init];
@@ -201,6 +203,14 @@
         [errormessage show];
     }
 }
+<<<<<<< HEAD
+=======
+-(void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+>>>>>>> FETCH_HEAD
 
 /*
 // Override to support conditional editing of the table view.

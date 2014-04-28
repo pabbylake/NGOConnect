@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad
 {
-    NSURL* urladdress = [NSURL URLWithString:@"http://rutgersprep.org"];
+    NSURL* urladdress = [NSURL URLWithString:_url];
     NSLog(@"%@",self.url);
     NSURLRequest * requestObj = [NSURLRequest requestWithURL:urladdress];
     [self.web loadRequest:requestObj];
