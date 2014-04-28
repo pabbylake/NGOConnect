@@ -172,13 +172,7 @@
     
 }
 }
-<<<<<<< HEAD
-- (void)Send
-{
-=======
-- (void)Send{
->>>>>>> FETCH_HEAD
-    
+-(void)Send{
     if([MFMailComposeViewController canSendMail])
     { MFMailComposeViewController *mailer =[[MFMailComposeViewController alloc] init];
         // NSData *imageData = UIImageJPGRepresentation(myImage, 24);
@@ -203,14 +197,11 @@
         [errormessage show];
     }
 }
-<<<<<<< HEAD
-=======
 -(void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
->>>>>>> FETCH_HEAD
 
 /*
 // Override to support conditional editing of the table view.
