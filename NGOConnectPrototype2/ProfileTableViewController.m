@@ -174,6 +174,33 @@
     
 }
 }
+- (void)Send
+{
+    
+    if([MFMailComposeViewController canSendMail])
+    { MFMailComposeViewController *mailer =[[MFMailComposeViewController alloc] init];
+        // NSData *imageData = UIImageJPGRepresentation(myImage, 24);
+        //[mailer addAttachmentData: imageData mimeType:@"image/jpeg" fileName:@"GreatGorgeLake.jpg"];
+        mailer.mailComposeDelegate = self;
+        NSString *emailBody =@"dfadfh";
+        
+        
+        [mailer setMessageBody:emailBody isHTML: YES];
+        [self presentViewController:mailer animated:YES completion:nil];
+        
+    }
+    else
+    {
+        //error message
+        UIAlertView *errormessage=
+        [[UIAlertView alloc] initWithTitle:@"ERROR"
+                                   message:@"You entered an invalid number"
+                                  delegate: nil
+                         cancelButtonTitle:@"OK"
+                         otherButtonTitles: @"Press", Nil];
+        [errormessage show];
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

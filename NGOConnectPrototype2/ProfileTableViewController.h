@@ -11,10 +11,13 @@
 #import "NGOMapAnnonation.h"
 #import "NGOMoreInfoControllerViewController.h"
 
-@interface ProfileTableViewController : UITableViewController
+#import <MessageUI/MessageUI.h>
+
+@interface ProfileTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 @property (nonatomic, strong) NGOProfile *theProfile;
 @property (nonatomic, strong) NSMutableArray *test;
 @property (nonatomic, strong) NSMutableArray *array;
 @property (nonatomic,strong) NSString *test2;
 @property (nonatomic,strong) NGOMoreInfoControllerViewController* moreinfo;
+- (void)Send;
 @end
