@@ -175,12 +175,14 @@
 -(void)Send{
     if([MFMailComposeViewController canSendMail])
     { MFMailComposeViewController *mailer =[[MFMailComposeViewController alloc] init];
-        // NSData *imageData = UIImageJPGRepresentation(myImage, 24);
-        //[mailer addAttachmentData: imageData mimeType:@"image/jpeg" fileName:@"GreatGorgeLake.jpg"];
+        
         mailer.mailComposeDelegate = self;
+        
+        NSArray *recipients =@[@"test@gmail.com"];
         NSString *emailBody =@"dfadfh";
         
         
+        [mailer setToRecipients:recipients];
         [mailer setMessageBody:emailBody isHTML: YES];
         [self presentViewController:mailer animated:YES completion:nil];
         
