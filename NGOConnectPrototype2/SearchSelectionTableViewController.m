@@ -35,7 +35,15 @@
 }
 
 - (void)viewDidLoad
-{
+{  _orgtype=@"&organizationType=";
+     _georScope=@"&geographicScope=";
+     _language=@"&language=";
+     _countries=@"&country=";
+     _mdgs=@"&mdgs=";
+     _FoA=@"&fieldActivity=";
+     _AreaExpertise=@"&areaExpertise=";
+     _accreditations=@"&accreditation=";
+     _consultstat=@"&consultativeStatus=";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -86,7 +94,11 @@
 }
 
 #pragma mark - Table view data source
-
+-(void)CreateDiscoverString
+{ 
+  //  &organizationType=&geographicScope=&language=&country=&mdgs=&fieldActivity=&areaExpertise=&accreditation=&consultativeStatus=&offset=&max=
+    
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
