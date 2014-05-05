@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SearchSelectionTableViewController : UITableViewController
 @property (nonatomic, strong) NSArray *oType;
 @property (nonatomic, strong) NSArray *mDG;
@@ -27,5 +28,7 @@
 @property (nonatomic, strong) NSString *AreaExpertise;
 @property (nonatomic, strong) NSString *accreditations;
 @property (nonatomic, strong) NSString *consultstat;
+@property (nonatomic, strong) NSArray *objects;
+
 
 @end

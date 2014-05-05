@@ -19,7 +19,7 @@
 - (IBAction)cStatusButton:(id)sender;
 
 - (IBAction)searchButton:(id)sender;
-@property(nonatomic, strong) SearchSelectionTableViewController *cagetory;
+@property(nonatomic, strong) SearchSelectionTableViewController *options;
 @property (nonatomic, strong) NSString *catIdent;
 
 @end

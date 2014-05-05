@@ -15,7 +15,7 @@
 @implementation SearchCagetoriesViewController
 
 @synthesize catIdent = _catIdent;
-@synthesize cagetory =_cagetory;
+@synthesize options =_options;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -37,36 +37,31 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-    //self.cagetory =[segue destinationViewController];
-    //[self.cagetory prepareForSegue:segue sender:sender];
-   // self.cagetory.category= self.catIdent;
-    //self.cagetory.selected=[NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
-//}
-
-- (IBAction)oTypeButton:(id)sender { self.catIdent = @"oType";
-   
-}
-
-- (IBAction)mDGButton:(id)sender {self.catIdent = @"mDG";
-}
-
-- (IBAction)languagesButton:(id)sender { self.catIdent = @"languages";
-}
-
-- (IBAction)fOAButton:(id)sender { self.catIdent = @"fOA";
-}
-
-- (IBAction)geoScopeButton:(id)sender { self.catIdent = @"geoScope";
-}
-
-- (IBAction)accreditationButton:(id)sender { self.catIdent = @"accreditation";
-}
-
-- (IBAction)cStatusButton:(id)sender { self.catIdent = @"cStatus";
-}
-
-- (IBAction)searchButton:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if([[segue identifier] isEqualToString:(@"oType")])
+    {
+    }
+    else if([[segue identifier] isEqualToString:(@"mDG")])
+    {
+        
+    }
+    else if([[segue identifier] isEqualToString:(@"country")])
+    {
+        
+    }
+    else if([[segue identifier] isEqualToString:(@"geoScope")])
+    {
+        
+    }
+    else if([[segue identifier] isEqualToString:(@"accredation")])
+    {
+        
+    }
+    else if([[segue identifier] isEqualToString:(@"cStatus")])
+    {
+        
+    }
 }
 @end
