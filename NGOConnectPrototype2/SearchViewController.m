@@ -52,4 +52,9 @@
     return YES;
 }
 
+-(NSString*) trimString:(NSString *)input
+{
+   return [input stringByReplacingOccurrencesOfString: @" " withString:@"+"];
+}
+
 @end
