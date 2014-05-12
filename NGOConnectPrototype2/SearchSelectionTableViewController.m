@@ -15,14 +15,6 @@
 
 @implementation SearchSelectionTableViewController
 
-@synthesize oType = _oType;
-@synthesize mDG = _mDG;
-@synthesize country = _country;
-@synthesize fOA = _fOA;
-@synthesize geoScope = _geoScope;
-@synthesize accreditation = _accreditation;
-@synthesize cStatus = _cStatus;
-@synthesize category=_category;
 
 
 - (id)initWithStyle:(UITableViewStyle)style

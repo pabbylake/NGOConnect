@@ -1,20 +1,19 @@
 //
-//  FieldOfActivityViewController.m
+//  FOA2TableTableViewController.m
 //  NGOConnectPrototype2
 //
-//  Created by Max Mendelson on 1/16/14.
+//  Created by Max Mendelson on 5/12/14.
 //  Copyright (c) 2014 Max Mendelson. All rights reserved.
 //
 
-#import "FieldOfActivityViewController.h"
-#import "FieldOfActivityCell.h"
-@interface FieldOfActivityViewController ()
+#import "FOA2TableTableViewController.h"
+
+@interface FOA2TableTableViewController ()
 
 @end
 
-@implementation FieldOfActivityViewController
-@synthesize options=_options;
-@synthesize FoA=_FoA;
+@implementation FOA2TableTableViewController
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -26,13 +25,11 @@
 
 - (void)viewDidLoad
 {
-    _FoA=@"&fieldActivity=";
-    self.options=[NSArray arrayWithObjects:@"Economic and Social",@"Financing For Development",@"Gender Issues and Advancement of Women",@"Population", @"Public Adminstartion",@"Social Development",@"Statistics",@"Sustainable Development",@"Peace and Development in Africa",@"Conflict Resolution in Africa",@"NEPAD",nil];
     [super viewDidLoad];
-
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -47,26 +44,28 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.options.count;
+    return 0;
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"FieldOfActivityCell";
-    FieldOfActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    NSInteger row = [indexPath row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
     // Configure the cell...
-    cell.optionLabel.text=self.options[row];
+    
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -84,8 +83,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
@@ -110,13 +108,12 @@
 /*
 #pragma mark - Navigation
 
-// In a story board-based application, you will often want to do a little preparation before navigation
+// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
- */
+*/
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "FOATableViewController.h"
+#import "FieldOfActivityCell.h"
 
 @interface FOATableViewController ()
 
@@ -51,14 +52,17 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 11;
+    return self.selected.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"FOACell";
+    FieldOfActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    // Configure the cell...
+    NSInteger row = [indexPath row];
+    cell.optionLabel.text = self.selected[row];
     // Configure the cell...
     
     return cell;
@@ -103,16 +107,17 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+{self.options =[segue destinationViewController];
+    [self.options prepareForSegue:segue sender:sender];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
 
- */
+
 
 @end

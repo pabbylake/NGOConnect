@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SearchSelectionTableViewController.h"
+#import "FOATableViewController.h"
 
 @interface SearchCagetoriesViewController : UIViewController
 - (IBAction)oTypeButton:(id)sender;
@@ -20,6 +21,8 @@
 
 - (IBAction)searchButton:(id)sender;
 @property(nonatomic, strong) SearchSelectionTableViewController *options;
+@property(nonatomic, strong) FOATableViewController *dest;
+
 @property (nonatomic, strong) NSString *catIdent;
 
 @end

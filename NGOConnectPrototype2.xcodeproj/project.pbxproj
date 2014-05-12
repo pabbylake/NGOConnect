@@ -23,10 +23,10 @@
 		1B5B012418A6CE6B00E1F64D /* ProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012318A6CE6B00E1F64D /* ProfileCell.m */; };
 		1B5B012A18A7B77800E1F64D /* FOA2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012918A7B77800E1F64D /* FOA2Cell.m */; };
 		1B5B012D18A7B79300E1F64D /* FOATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B012C18A7B79300E1F64D /* FOATableViewController.m */; };
+		1B714D5619210BE70030ABE9 /* FOA2TableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B714D5519210BE70030ABE9 /* FOA2TableTableViewController.m */; };
 		1B8BCE8D184CE68C00C1DD2F /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */; };
 		1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */; };
 		1B8BCE9C184FB0DD00C1DD2F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */; };
-		1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */; };
 		1BC7ED471898326F005CD635 /* NGOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED461898326F005CD635 /* NGOMapViewController.m */; };
 		1BC7ED5018983509005CD635 /* NGOMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7ED4F18983509005CD635 /* NGOMapAnnotation.m */; };
 		1BC7ED5F1827E84A009EC21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC7ED5E1827E84A009EC21A /* Foundation.framework */; };
@@ -96,14 +96,14 @@
 		1B5B012918A7B77800E1F64D /* FOA2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOA2Cell.m; sourceTree = "<group>"; };
 		1B5B012B18A7B79300E1F64D /* FOATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOATableViewController.h; sourceTree = "<group>"; };
 		1B5B012C18A7B79300E1F64D /* FOATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOATableViewController.m; sourceTree = "<group>"; };
+		1B714D5419210BE70030ABE9 /* FOA2TableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOA2TableTableViewController.h; sourceTree = "<group>"; };
+		1B714D5519210BE70030ABE9 /* FOA2TableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOA2TableTableViewController.m; sourceTree = "<group>"; };
 		1B8BCE8B184CE68C00C1DD2F /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
 		1B8BCE8C184CE68C00C1DD2F /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		1B8BCE8E184CEB0800C1DD2F /* SearchResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsCell.h; sourceTree = "<group>"; };
 		1B8BCE8F184CEB0800C1DD2F /* SearchResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsCell.m; sourceTree = "<group>"; };
 		1B8BCE9A184FB0DD00C1DD2F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		1B8BCE9B184FB0DD00C1DD2F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfActivityViewController.h; sourceTree = "<group>"; };
-		1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldOfActivityViewController.m; sourceTree = "<group>"; };
 		1BC7ED451898326F005CD635 /* NGOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapViewController.h; sourceTree = "<group>"; };
 		1BC7ED461898326F005CD635 /* NGOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOMapViewController.m; sourceTree = "<group>"; };
 		1BC7ED4E18983509005CD635 /* NGOMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOMapAnnotation.h; sourceTree = "<group>"; };
@@ -292,12 +292,12 @@
 			children = (
 				1BCC3C1C18ABBC250015E696 /* FieldOfActivityCell.h */,
 				1BCC3C1D18ABBC250015E696 /* FieldOfActivityCell.m */,
-				1B9EA23218886186005030A6 /* FieldOfActivityViewController.h */,
-				1B9EA23318886186005030A6 /* FieldOfActivityViewController.m */,
 				1B5B012B18A7B79300E1F64D /* FOATableViewController.h */,
 				1B5B012C18A7B79300E1F64D /* FOATableViewController.m */,
 				1B5B012818A7B77800E1F64D /* FOA2Cell.h */,
 				1B5B012918A7B77800E1F64D /* FOA2Cell.m */,
+				1B714D5419210BE70030ABE9 /* FOA2TableTableViewController.h */,
+				1B714D5519210BE70030ABE9 /* FOA2TableTableViewController.m */,
 			);
 			name = FieldOfActivity;
 			sourceTree = "<group>";
@@ -505,6 +505,7 @@
 				1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */,
 				1B5B012118A6C8A100E1F64D /* ProfileTableViewController.m in Sources */,
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
+				1B714D5619210BE70030ABE9 /* FOA2TableTableViewController.m in Sources */,
 				212ABABE18EF2CE600FE6ABC /* NGOCustomMapViewController.m in Sources */,
 				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
 				1BC7ED781827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m in Sources */,
@@ -520,7 +521,6 @@
 				1B592649187D040E004195A4 /* RecentsCell.m in Sources */,
 				1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */,
 				1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */,
-				1B9EA23418886186005030A6 /* FieldOfActivityViewController.m in Sources */,
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
 				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
 				1BCC44A11906A8F900C25664 /* NGOMoreInfoControllerViewController.m in Sources */,

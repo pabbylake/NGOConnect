@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FOA2TableTableViewController.h"
 
 @interface FOATableViewController : UITableViewController
-
+@property(strong,nonatomic)NSArray *selected;
+@property(strong,nonatomic)FOA2TableTableViewController *options;
 @end
