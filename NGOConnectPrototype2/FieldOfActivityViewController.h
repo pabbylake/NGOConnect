@@ -10,4 +10,5 @@
 
 @interface FieldOfActivityViewController : UITableViewController
 @property NSArray *options;
+@property (strong,nonatomic) NSString *FoA;
 @end

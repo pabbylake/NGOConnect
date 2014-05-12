@@ -14,6 +14,7 @@
 
 @implementation FieldOfActivityViewController
 @synthesize options=_options;
+@synthesize FoA=_FoA;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -24,7 +25,9 @@
 }
 
 - (void)viewDidLoad
-{ self.options=[NSArray arrayWithObjects:@"Economic and Social",@"Financing For Development",@"Gender Issues and Advancement of Women",@"Population", @"Public Adminstartion",@"Social Development",@"Statistics",@"Sustainable Development",@"Peace and Development in Africa",@"Conflict Resolution in Africa",@"NEPAD",nil];
+{
+    _FoA=@"&fieldActivity=";
+    self.options=[NSArray arrayWithObjects:@"Economic and Social",@"Financing For Development",@"Gender Issues and Advancement of Women",@"Population", @"Public Adminstartion",@"Social Development",@"Statistics",@"Sustainable Development",@"Peace and Development in Africa",@"Conflict Resolution in Africa",@"NEPAD",nil];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.

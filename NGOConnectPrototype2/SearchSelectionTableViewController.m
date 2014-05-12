@@ -40,7 +40,6 @@
      _language=@"&language=";
      _countries=@"&country=";
      _mdgs=@"&mdgs=";
-     _FoA=@"&fieldActivity=";
      _AreaExpertise=@"&areaExpertise=";
      _accreditations=@"&accreditation=";
      _consultstat=@"&consultativeStatus=";
@@ -50,39 +49,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    if((_category = @"oType"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"Academics", @"Association", @"Disability, Development and Rights Organizations", @"Cooperative", @"Foundation", @"Indigenous Peoples Organizations", @"Institution", @"Inter-Governmental Organization", @"Local Government", @"Media", @"Non-Governmental Organization", @"Open-Ended Working Group on Ageing", @"Others", @"Private Sector", @"Trade Union", nil];
-        //NSLog(self.oType);
-    }
-    else if((_category = @"mDG"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"Eradicate Extreme Poverty and Hunger", @"Achieve Universal Primary Education", @"Combat HIV/AIDS, Malaria, and Other Diseases", @"Develop Globl Partnership For Development", @"Ensure Environmental Sustainability", @"Improve Maternal Health", @"Promote Gender Equality and Empower Women", @"Reduce Child Mortality", nil];
-    }
-    else if((_category = @"country"))
-    {
-        
-    }
-
-    else if((_category = @"fOA"))
-    {
-        
-    }
-
-    else if((_category = @"geoScope"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"International", @"Regional", @"National",@"Local", nil];
-    }
-
-    else if((_category = @"accreditation"))
-    {
-       self.selected = [NSArray arrayWithObjects:@"DPI", @"ECOSOC", @"Other", nil];
-    }
-
-    else if((_category = @"cStatus"))
-    {
-        self.selected = [NSArray arrayWithObjects:@"General", @"Special", @"Roster", nil];
-    }
+  
+    
 [super viewDidLoad];
     
 }
