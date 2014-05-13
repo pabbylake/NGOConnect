@@ -16,6 +16,7 @@
 @implementation SearchSelectionTableViewController
 
 @synthesize arrayOfCells = _arrayOfCells;
+NSInteger currentCellIndex = 0;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,6 +38,7 @@
      _consultstat=@"&consultativeStatus=";
     
     self.arrayOfCells = [[NSMutableArray alloc]init];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -52,8 +54,11 @@
 {
     //Change the selected background view of the cell.
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    currentCellIndex = [indexPath row];
     
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -87,6 +92,7 @@
     
     // Configure the cell...
     NSInteger row = [indexPath row];
+    
     cell.optionLabel.text = self.selected[row];
     
     return cell;
