@@ -13,7 +13,6 @@
 @interface SearchCagetoriesViewController : UIViewController
 
 
-- (IBAction)searchButton:(id)sender;
 @property(nonatomic, strong) SearchSelectionTableViewController *options;
 @property(nonatomic, strong) FOATableViewController *dest;
 
