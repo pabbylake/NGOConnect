@@ -15,7 +15,7 @@
 
 @implementation SearchSelectionTableViewController
 
-
+@synthesize arrayOfCells = _arrayOfCells;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,6 +36,7 @@
      _accreditations=@"&accreditation=";
      _consultstat=@"&consultativeStatus=";
     
+    self.arrayOfCells = [[NSMutableArray alloc]init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -44,6 +45,13 @@
   
     
 [super viewDidLoad];
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //Change the selected background view of the cell.
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
 
@@ -75,6 +83,7 @@
 {
     static NSString *CellIdentifier = @"SearchSelectionCell";
     SearchSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    [self.arrayOfCells addObject:cell];
     
     // Configure the cell...
     NSInteger row = [indexPath row];
@@ -82,6 +91,7 @@
     
     return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.

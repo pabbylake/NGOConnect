@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SearchSelectionCell.h"
 
 
 @interface SearchSelectionTableViewController : UITableViewController
@@ -21,6 +22,7 @@
 @property (nonatomic, strong) NSString *accreditations;
 @property (nonatomic, strong) NSString *consultstat;
 @property (nonatomic, strong) NSArray *objects;
+@property (nonatomic, strong) NSMutableArray* arrayOfCells;
 
 
 @end
