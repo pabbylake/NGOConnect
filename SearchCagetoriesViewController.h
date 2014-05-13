@@ -11,13 +11,7 @@
 #import "FOATableViewController.h"
 
 @interface SearchCagetoriesViewController : UIViewController
-- (IBAction)oTypeButton:(id)sender;
-- (IBAction)mDGButton:(id)sender;
-- (IBAction)languagesButton:(id)sender;
-- (IBAction)fOAButton:(id)sender;
-- (IBAction)geoScopeButton:(id)sender;
-- (IBAction)accreditationButton:(id)sender;
-- (IBAction)cStatusButton:(id)sender;
+
 
 - (IBAction)searchButton:(id)sender;
 @property(nonatomic, strong) SearchSelectionTableViewController *options;
