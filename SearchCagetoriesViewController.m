@@ -7,7 +7,7 @@
 //
 
 #import "SearchCagetoriesViewController.h"
-
+#import "SearchSelectionTableViewController.h"
 @interface SearchCagetoriesViewController ()
 
 @end
@@ -16,7 +16,6 @@
 
 @synthesize catIdent = _catIdent;
 @synthesize options =_options;
-@synthesize category = _category;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

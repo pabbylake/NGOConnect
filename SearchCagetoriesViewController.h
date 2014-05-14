@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SearchSelectionTableViewController.h"
 #import "FOATableViewController.h"
+#import "SearchSelectionTableViewController.h"
 
 @interface SearchCagetoriesViewController : UIViewController
 
-@property(nonatomic, strong) FOATableViewController *dest;
 @property (nonatomic, strong) SearchSelectionTableViewController *options;
+@property(nonatomic, strong) FOATableViewController *dest;
 
 @property (nonatomic, strong) NSString *orgtype;
 @property (nonatomic, strong) NSString *georScope;

@@ -14,7 +14,7 @@
 @interface SearchSelectionTableViewController : UITableViewController
 @property(nonatomic,strong) NSString *category;
 @property (nonatomic, strong) NSArray *selected;
-@property (nonatomic, strong) SearchCagetoriesViewController* categoryController;
+
 @property (nonatomic, strong) NSArray *objects;
 @property (nonatomic, strong) NSMutableArray* arrayOfCells;
 

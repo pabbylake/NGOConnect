@@ -111,16 +111,6 @@ NSInteger currentCellIndex = 0;
     return cell;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if([[segue identifier] isEqualToString:(@"oType")])
-    {
-        self.categoryController =[segue destinationViewController];
-        [self.categoryController prepareForSegue:segue sender:sender];
-    }
-    
-}
-
 
 /*
 // Override to support conditional editing of the table view.
