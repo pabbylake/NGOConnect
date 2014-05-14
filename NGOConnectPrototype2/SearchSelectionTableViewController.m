@@ -28,14 +28,7 @@ NSInteger currentCellIndex = 0;
 }
 
 - (void)viewDidLoad
-{  _orgtype=@"&organizationType=";
-     _georScope=@"&geographicScope=";
-     _language=@"&language=";
-     _countries=@"&country=";
-     _mdgs=@"&mdgs=";
-     _AreaExpertise=@"&areaExpertise=";
-     _accreditations=@"&accreditation=";
-     _consultstat=@"&consultativeStatus=";
+{  
     
     self.arrayOfCells = [[NSMutableArray alloc]init];
     
@@ -56,10 +49,26 @@ NSInteger currentCellIndex = 0;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     currentCellIndex = [indexPath row];
     
+    
+    NSString* message =  @"Do you want to Select ";
+      NSInteger row = [indexPath row];
+    NSString *s = _selected[row];
+    
+    message = [message stringByAppendingString:s];
+       UIAlertView *popup=[[UIAlertView alloc]initWithTitle:@"Search Options" message:message delegate: self cancelButtonTitle: @"Cancel"otherButtonTitles:@"Ok", nil]; [popup show];
+        
+    
 }
 
 
-
+-(void) alertView:(UIAlertView*) alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    if(buttonIndex==1)
+    {
+        
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
