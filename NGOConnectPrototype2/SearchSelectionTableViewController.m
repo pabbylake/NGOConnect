@@ -15,6 +15,7 @@
 
 @implementation SearchSelectionTableViewController
 
+NSString *searchSelection = @"";
 @synthesize arrayOfCells = _arrayOfCells;
 NSInteger currentCellIndex = 0;
 
@@ -52,9 +53,9 @@ NSInteger currentCellIndex = 0;
     
     NSString* message =  @"Do you want to Select ";
       NSInteger row = [indexPath row];
-    NSString *s = _selected[row];
+      searchSelection = _selected[row];
     
-    message = [message stringByAppendingString:s];
+    message = [message stringByAppendingString:searchSelection];
        UIAlertView *popup=[[UIAlertView alloc]initWithTitle:@"Search Options" message:message delegate: self cancelButtonTitle: @"Cancel"otherButtonTitles:@"Ok", nil]; [popup show];
         
     
@@ -66,9 +67,12 @@ NSInteger currentCellIndex = 0;
     
     if(buttonIndex==1)
     {
-        
+        NSLog(@"OK");
+       self.category = searchSelection;
     }
 }
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -105,6 +109,16 @@ NSInteger currentCellIndex = 0;
     cell.optionLabel.text = self.selected[row];
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:(@"oType")])
+    {
+        self.categoryController =[segue destinationViewController];
+        [self.categoryController prepareForSegue:segue sender:sender];
+    }
+    
 }
 
 

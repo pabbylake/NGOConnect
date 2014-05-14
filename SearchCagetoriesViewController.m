@@ -16,6 +16,8 @@
 
 @synthesize catIdent = _catIdent;
 @synthesize options =_options;
+@synthesize category = _category;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

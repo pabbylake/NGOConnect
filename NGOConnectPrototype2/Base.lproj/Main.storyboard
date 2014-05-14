@@ -256,13 +256,13 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Discover" id="tpx-XE-IQr">
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Fnh-Pt-ydM"/>
+                        <barButtonItem key="rightBarButtonItem" title="Clear Options" id="Fnh-Pt-ydM"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NV1-DS-7m1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603" y="-932"/>
+            <point key="canvasLocation" x="1394" y="-979"/>
         </scene>
         <!--Search Selection Table View Controller-->
         <scene sceneID="nLr-nT-AQJ">
