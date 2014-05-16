@@ -13,7 +13,8 @@
 @end
 
 @implementation FOA2TableTableViewController
-
+NSInteger currentC = 0;
+@synthesize caget=_caget;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -24,7 +25,7 @@
 }
 
 - (void)viewDidLoad
-{
+{ //self.selected=[[NSMutableArray alloc]init];
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -33,7 +34,25 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{  //Change the selected background view of the cell.
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    currentC = [indexPath row];
+    
+    
+    NSString* message =  @"Do you want to Select ";
+    NSInteger row = [indexPath row];
+    NSString *s = _selected[row];
+    NSString *a=@" & ";
+    
+    message = [message stringByAppendingString:s];
+    
+    message = [message stringByAppendingString:a];
+    message = [message stringByAppendingString:_caget];
+    UIAlertView *popup=[[UIAlertView alloc]initWithTitle:@"Search Options" message:message delegate: self cancelButtonTitle: @"Cancel"otherButtonTitles:@"Ok", nil]; [popup show];
+    
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -51,19 +70,22 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return _selected.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"FOA2Cell";
+    FOA2Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    NSInteger row = [indexPath row];
     
+    cell.optionLabel.text = self.selected[row]; 
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

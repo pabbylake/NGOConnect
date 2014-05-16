@@ -10,6 +10,5 @@
 
 @interface FOA2Cell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *optionLabel;
-@property (weak, nonatomic) IBOutlet UISwitch *onOffSwitch;
 
 @end

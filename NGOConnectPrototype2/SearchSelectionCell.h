@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SearchSelectionTableViewController.h"
 
 @interface SearchSelectionCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *optionLabel;

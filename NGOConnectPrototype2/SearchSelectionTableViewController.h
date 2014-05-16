@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "SearchSelectionCell.h"
-#import "SearchCagetoriesViewController.h"
 
 
 @interface SearchSelectionTableViewController : UITableViewController
@@ -17,5 +16,6 @@
 
 @property (nonatomic, strong) NSArray *objects;
 @property (nonatomic, strong) NSMutableArray* arrayOfCells;
+
 
 @end

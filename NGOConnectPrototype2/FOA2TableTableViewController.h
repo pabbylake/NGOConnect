@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FOA2Cell.h"
 
 @interface FOA2TableTableViewController : UITableViewController
-@property(strong,nonatomic) NSArray *selected;
+@property(strong,nonatomic) NSMutableArray *selected;
+@property (strong, nonatomic) NSString *caget;
 @end

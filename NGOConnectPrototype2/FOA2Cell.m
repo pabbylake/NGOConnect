@@ -11,7 +11,6 @@
 @implementation FOA2Cell
 
 @synthesize optionLabel = _optionLabel;
-@synthesize onOffSwitch = _onOffSwitch;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

@@ -256,13 +256,13 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Discover" id="tpx-XE-IQr">
-                        <barButtonItem key="rightBarButtonItem" title="Clear Options" id="Fnh-Pt-ydM"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Fnh-Pt-ydM"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NV1-DS-7m1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="-979"/>
+            <point key="canvasLocation" x="1765" y="-914"/>
         </scene>
         <!--Search Selection Table View Controller-->
         <scene sceneID="nLr-nT-AQJ">
@@ -303,7 +303,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUZ-eK-nKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1938" y="-961"/>
+            <point key="canvasLocation" x="2424" y="-923"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="BXp-OC-IJv">
@@ -332,7 +332,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="optionLabel" destination="Ryf-Hi-3HC" id="6Qg-HW-ePR"/>
-                                    <segue destination="sd1-fS-Twu" kind="push" id="JPP-t3-OlP"/>
+                                    <segue destination="sd1-fS-Twu" kind="push" identifier="FOA2" id="JPP-t3-OlP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -351,36 +351,28 @@
         <scene sceneID="muT-0l-w09">
             <objects>
                 <tableViewController id="sd1-fS-Twu" customClass="FOA2TableTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="a4d-qN-Roh">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="a4d-qN-Roh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FOA2Cell" id="dqI-kl-xYU" customClass="FOA2Cell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FOA2Cell" rowHeight="70" id="dqI-kl-xYU" customClass="FOA2Cell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dqI-kl-xYU" id="LYb-Vs-cfK">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hb0-88-pyw">
-                                            <rect key="frame" x="10" y="2" width="243" height="36"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="243" translatesAutoresizingMaskIntoConstraints="NO" id="Hb0-88-pyw">
+                                            <rect key="frame" x="10" y="2" width="243" height="67"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d1V-1J-VyM">
-                                            <rect key="frame" x="261" y="6" width="51" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="tintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="onTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
-                                        </switch>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="onOffSwitch" destination="d1V-1J-VyM" id="p2A-T1-Va3"/>
                                     <outlet property="optionLabel" destination="Hb0-88-pyw" id="3DC-3M-tkD"/>
                                 </connections>
                             </tableViewCell>
