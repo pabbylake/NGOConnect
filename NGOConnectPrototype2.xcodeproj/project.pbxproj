@@ -14,7 +14,6 @@
 		1B592649187D040E004195A4 /* RecentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592648187D040E004195A4 /* RecentsCell.m */; };
 		1B59264C187D7E86004195A4 /* SearchSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */; };
 		1B59264F187D7EBA004195A4 /* SearchSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */; };
-		1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */; };
 		1B5B011818A6BF5900E1F64D /* bluebuttonbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */; };
 		1B5B011A18A6C1D400E1F64D /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011918A6C1D400E1F64D /* logo.jpg */; };
 		1B5B011C18A6C23100E1F64D /* searchbuttonbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */; };
@@ -55,6 +54,7 @@
 		2128F5FB18EB418100582999 /* CalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2128F5F718EB418100582999 /* CalloutAnnotation.m */; };
 		2128F5FC18EB418100582999 /* CalloutAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2128F5F918EB418100582999 /* CalloutAnnotationView.m */; };
 		212ABABE18EF2CE600FE6ABC /* NGOCustomMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212ABABD18EF2CE600FE6ABC /* NGOCustomMapViewController.m */; };
+		214C3D30192682DC00D07297 /* SearchCagetoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 214C3D2F192682DC00D07297 /* SearchCagetoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +82,6 @@
 		1B59264B187D7E86004195A4 /* SearchSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionTableViewController.m; sourceTree = "<group>"; };
 		1B59264D187D7EBA004195A4 /* SearchSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchSelectionCell.h; sourceTree = "<group>"; };
 		1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSelectionCell.m; sourceTree = "<group>"; };
-		1B592650187D8A73004195A4 /* SearchCagetoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCagetoriesViewController.h; path = ../SearchCagetoriesViewController.h; sourceTree = "<group>"; };
-		1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCagetoriesViewController.m; path = ../SearchCagetoriesViewController.m; sourceTree = "<group>"; };
 		1B5B011718A6BF5900E1F64D /* bluebuttonbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bluebuttonbackground.jpg; sourceTree = "<group>"; };
 		1B5B011918A6C1D400E1F64D /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		1B5B011B18A6C23100E1F64D /* searchbuttonbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = searchbuttonbackground.jpg; sourceTree = "<group>"; };
@@ -149,6 +147,8 @@
 		2128F5F918EB418100582999 /* CalloutAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutAnnotationView.m; sourceTree = "<group>"; };
 		212ABABC18EF2CE600FE6ABC /* NGOCustomMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGOCustomMapViewController.h; sourceTree = "<group>"; };
 		212ABABD18EF2CE600FE6ABC /* NGOCustomMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGOCustomMapViewController.m; sourceTree = "<group>"; };
+		214C3D2E192682DC00D07297 /* SearchCagetoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCagetoryViewController.h; path = ../SearchCagetoryViewController.h; sourceTree = "<group>"; };
+		214C3D2F192682DC00D07297 /* SearchCagetoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCagetoryViewController.m; path = ../SearchCagetoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +210,8 @@
 		1B8BCE92184CEB3000C1DD2F /* AdvancedSearch */ = {
 			isa = PBXGroup;
 			children = (
-				1B592650187D8A73004195A4 /* SearchCagetoriesViewController.h */,
-				1B592651187D8A73004195A4 /* SearchCagetoriesViewController.m */,
+				214C3D2E192682DC00D07297 /* SearchCagetoryViewController.h */,
+				214C3D2F192682DC00D07297 /* SearchCagetoryViewController.m */,
 				1B59264D187D7EBA004195A4 /* SearchSelectionCell.h */,
 				1B59264E187D7EBA004195A4 /* SearchSelectionCell.m */,
 				1B59264A187D7E86004195A4 /* SearchSelectionTableViewController.h */,
@@ -506,6 +506,7 @@
 				1B5B012118A6C8A100E1F64D /* ProfileTableViewController.m in Sources */,
 				1BC7ED6B1827E84A009EC21A /* main.m in Sources */,
 				1B714D5619210BE70030ABE9 /* FOA2TableTableViewController.m in Sources */,
+				214C3D30192682DC00D07297 /* SearchCagetoryViewController.m in Sources */,
 				212ABABE18EF2CE600FE6ABC /* NGOCustomMapViewController.m in Sources */,
 				1B59263B187C8706004195A4 /* RecentsTableViewController.m in Sources */,
 				1BC7ED781827E84A009EC21A /* NGOConnectPrototype2SecondViewController.m in Sources */,
@@ -522,7 +523,6 @@
 				1B592642187C8B4A004195A4 /* FavoritesTableViewController.m in Sources */,
 				1B8BCE90184CEB0800C1DD2F /* SearchResultsCell.m in Sources */,
 				1BC7ED98182803F9009EC21A /* NearMeViewController.m in Sources */,
-				1B592652187D8A73004195A4 /* SearchCagetoriesViewController.m in Sources */,
 				1BCC44A11906A8F900C25664 /* NGOMoreInfoControllerViewController.m in Sources */,
 				1BCC3C1E18ABBC250015E696 /* FieldOfActivityCell.m in Sources */,
 			);

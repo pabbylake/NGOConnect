@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="2436" y="590"/>
         </scene>
-        <!--Search Cagetories View Controller - Discover-->
+        <!--Search Cagetory View Controller - Discover-->
         <scene sceneID="230-NA-Ykd">
             <objects>
-                <viewController id="wAr-NT-4hk" customClass="SearchCagetoriesViewController" sceneMemberID="viewController">
+                <viewController id="wAr-NT-4hk" customClass="SearchCagetoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9qi-z1-jcq"/>
                         <viewControllerLayoutGuide type="bottom" id="FMW-hp-zxh"/>

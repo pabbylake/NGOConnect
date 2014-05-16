@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SearchSelectionCell.h"
-#import "SearchCagetoriesViewController.h"
+#import "SearchCagetoryViewController.h"
 
 
 @interface SearchSelectionTableViewController : UITableViewController
